@@ -1,4 +1,3 @@
-#
 # Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective
 
 [insert cool image to jazz up this front page]
