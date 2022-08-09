@@ -1,111 +1,14 @@
 # Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective
 
-[insert cool image to jazz up this front page]
-
 _Created by:_ (authors listed alphabetically) [Jennifer Bauer](https://orcid.org/0000-0002-6337-6270), [Roger Burkhalter](https://orcid.org/0000-0001-5518-5661), [Talia Karim](https://orcid.org/0000-0001-6514-963X), [Erica Krimmel](https://orcid.org/0000-0003-3192-0080), Margaret Landis, [Siobhan Leachman](https://orcid.org/0000-0002-5398-7721), [Holly Little](https://orcid.org/0000-0001-7909-4166), [Malena Lorente](https://orcid.org/0000-0002-3723-0710), [Suzanne K. Mills](https://orcid.org/0000-0002-3759-694X), Nicole Neu-Yagle, [Ben Norton](https://orcid.org/0000-0002-5819-9134), [Deborah Paul](https://orcid.org/0000-0003-2639-7520), [David Shorthouse](https://orcid.org/0000-0001-7618-5230), [Jessica Utrup](https://orcid.org/0000-0001-5201-8235), [Jacob Van Veldhuizen](https://orcid.org/0000-0001-6770-0181), [Lindsay Walker](https://orcid.org/0000-0002-2162-6593), and with input from participants of the "Using Wikidata to Capture and Share Information about People in Paleontology" workshop (March 2022).
 
-_Publishing date_: 2022-XX-XX
+_Publishing date_: 2022-08-09
 
 _License_: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 
-_Should you wish to credit this document, please cite as:_[add once we have determined where to share]
+_Should you wish to credit this document, please cite as:
 
 _This document was inspired by and draws content from:_ Siobhan Leachman. 2020. Wikidata Notes for Bat Collectors. [https://doi.org/10.5281/zenodo.4724139](https://doi.org/10.5281/zenodo.4724139).
-
-**Table of Contents**
-
-[Introduction](#_9ys7z8mwju2o)
-
-[Purpose of this document](#_7yz53g7hrnt5)
-
-[Why use Wikidata?](#_uwyf8ndswl2z)
-
-[Best practices for mobilizing information about people](#_ja25pmnh2rej)
-
-[Respect Privacy](#_ktcyr6oalqml)
-
-[Maintain Objectivity](#_o2m962f833ps)
-
-[Glossary](#_im5ca43d34jm)
-
-[Contributing to Wikidata](#_xcc8unbufbi6)
-
-[Create a new account and log in](#_i3l6qnytp4i)
-
-[Search for an existing item](#_uptflaizl9s3)
-
-[Quick search using the search box](#_6hyfe3y9askm)
-
-[Comprehensive search using the Query Service](#_filf3fedmym3)
-
-[Create a new item](#_yknsxhra26cx)
-
-[Add statements](#_2z7vn8bqd6sz)
-
-[Wikidata items to use as exemplars](#_gjlulwkzfci3)
-
-[Add references](#_76qxzuercrnh)
-
-[Tools for references](#_elq44hq45qs)
-
-[Selecting high quality references](#_1ipnlhma0t3g)
-
-[Archiving unstable URLs](#_yjf6ogqhq5z3)
-
-[Analog references](#_6gyc2z7vh8au)
-
-[Add external identifiers](#_mgp05lfms8bs)
-
-[Merge items](#_9v584so5cyv2)
-
-[Edit in bulk](#_b9wiv83cy9bc)
-
-[QuickStatements](#_a1xc29j9mk0i)
-
-[OpenRefine Wikidata Plugin](#_96rwifea2wn5)
-
-[Scripting](#_8tj03l5izadg)
-
-[Querying Wikidata](#_93iyd0nkxbo)
-
-[Wikidata Query Builder](#_4oz9mla8n9ht)
-
-[SPARQL](#_3xfks9vwxkhz)
-
-[Using Wikidata outside of Wikidata](#_phm41tosmox1)
-
-[Exporting From Wikidata in Bulk](#_mszb3fdw5lqp)
-
-[Export with Wikidata Query Service](#_ey5n81sngvqm)
-
-[Export with MediaWiki Action API](#_bm7v635dj6fk)
-
-[Export with REST API](#_6fhi6ekvnl8g)
-
-[Export with JSON Data Dump](#_c7rkr9w3n9ss)
-
-[Export with RDF Data Dump](#_eij0or5x6m5f)
-
-[Wikidata Toolkit](#_hesroemw5b34)
-
-[Resources](#_kkx34hsvjvdp)
-
-[Resources for discovering biographical information](#_skvnrilfzq5k)
-
-[Resources for using Wikidata](#_lve879ltui7f)
-
-[Resources for exploring Wikidata](#_5kk40cklds7j)
-
-[Resources for getting involved in the Wikimedia community](#_titv9dqwe27l)
-
-[Conclusion](#_yv0q8m6257kg)
-
-[Appendix A. Recommended Wikidata Properties](#_92clws2v26zl)
-
-[Appendix B. External Identifiers for People](#_4fhqfmhbj91v)
-
-##
-
 
 ## Introduction
 
@@ -120,8 +23,6 @@ Collections professionals often focus on sharing information about specimens by 
 Currently, biographical information and the curatorial effort to maintain this information tend to be duplicated across scientific collection databases and institutions. Wikidata offers a centralized, independent platform for working collaboratively to disambiguate people associated with collections and to mobilize biographical information about them. For example, aliases and other biographical information captured in Wikidata by collections staff with deep knowledge about a person can help staff at another collection disambiguate an obscure namestring associated with some of their specimens. Once a person is represented in Wikidata, they are associated with a unique Wikidata identifier (i.e., a [Wikidata QID](https://www.wikidata.org/wiki/Q43649390)). Wikidata identifiers underpin the ability to transfer information about people programmatically, thereby facilitating data completeness, accuracy, and redundancy between local collection databases, Wikidata, and various other online databases and collections management systems.
 
 Storing biographical information in Wikidata makes it more discoverable as part of the Linked Open Data ecosphere. For example, queries on Google's search engine return results from Wikidata (Figure 1). As a centralized repository of linked data, Wikidata also provides ways to demonstrate who is doing what work across multiple collections, and with what impact. This has potential to increase inclusion and improve equity, as many people associated with scientific collections have yet to be fully acknowledged for their contributions, especially historical people who were female, non-White, Indigenous, and/or of lower social or educational standing. The process of creating, editing, and linking information in Wikidata is inherently transparent and encourages removing silos and sharing expertise.
-
-![](RackMultipart20220809-1-5enz3r_html_9c3395a61ec947fa.png)
 
 Figure 1. Screenshot from Google ([https://www.google.com](https://www.google.com/), retrieved 2022-04-25) illustrating how its search engine presents structured data via the "Knowledge Panel" in the right hand sidebar. These data come from the Google Knowledge Graph, which in turn draws from various sources including Wikidata.
 
@@ -156,8 +57,6 @@ To create and edit Wikidata items, you need to have a Wikimedia account. This ac
 1. To create a new account, start at the main Wikidata page here: [https://www.wikidata.org/wiki/Wikidata:Main\_Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)
 2. Click _Create Account_ at the top right of this page (Figure 2). Fill out the form and click the blue _Create your account_ button. Record your username and password so that you can log in again at a later date.
 
-![](RackMultipart20220809-1-5enz3r_html_407e9ca794fb2e09.png)
-
 Figure 2. Screenshot from Wikidata ([https://www.wikidata.org](https://www.wikidata.org/), retrieved 2022-05-05) indicating where to create an account and/or log in.
 
 1. When creating a new account, it is helpful to other users to include some information about yourself on your personal user page. This lets the community know who you are and what you are interested in working on in Wikidata. For example, see the user page for Wikidata superuser Siobhan Leachman here: [https://www.wikidata.org/wiki/User:Ambrosia10](https://www.wikidata.org/wiki/User:Ambrosia10). Siobhan's page includes information about herself and the projects she has worked on, including notes that serve as useful memory aids for her and others.
@@ -171,8 +70,6 @@ Once logged in, you can create new items and edit existing ones. To prevent dupl
 ### Quick search using the search box
 
 One option is to do a quick search for an existing item (e.g., a person) using the Wikidata search box at the upper right of your screen (Figure 3).
-
-![](RackMultipart20220809-1-5enz3r_html_4a934447d4736114.png)
 
 Figure 3. Screenshot from Wikidata ([https://www.wikidata.org](https://www.wikidata.org/), retrieved 2022-05-05) indicating where the quick search box is located.
 
@@ -197,13 +94,9 @@ As a reminder, you must be logged into Wikidata to create a new item.
   3. The _Description_ field provides space for a tagline about who this person is and/or what they do. This description is displayed underneath the _Label_ value and can be a useful way of quickly disambiguating different people in Wikidata search results (Figure 5). The preferred format for a description includes country of citizenship and occupation(s) followed by birth and death years, e.g., "American paleontologist (1858 –1942)." Refer to the country of citizenship following the same language norms that Wikidata uses elsewhere, e.g., "[Americans](https://www.wikidata.org/wiki/Q846570)" for people from the United States of America.
   4. The _Aliases_ (or _Also known as_) field is highly important for disambiguation. All variations of a person's name should be included in this field, using a pipe character ("|") to separate each variation, e.g., "C. Schuchert | C Schuchert | Chas Schuchert." Alternatively, aliases can also be added after creating the new item. Aliases help humans and computers (including Wikidata bots) link items to external identifiers, and they also help others find this item more easily when using the Wikidata search box.
 
-![](RackMultipart20220809-1-5enz3r_html_382b6b4ee39bcd6f.png)
-
 Figure 4. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Special:NewItem](https://www.wikidata.org/wiki/Special:NewItem), retrieved 2022-05-05) showing the form to create a new item.
 
 1. Press the blue _Create_ button at the bottom left of the form to publish the new item to Wikidata. You will be redirected to a new page displaying the information you just entered (Figure 5).
-
-![](RackMultipart20220809-1-5enz3r_html_1824c5844eb9f65e.png)
 
 Figure 5. Screenshot of Charles Schuchert's Wikidata item ([https://www.wikidata.org/wiki/Q2623977](https://www.wikidata.org/wiki/Q2623977), retrieved 2022-05-05) showing his description and aliases.
 
@@ -212,8 +105,6 @@ Figure 5. Screenshot of Charles Schuchert's Wikidata item ([https://www.wikidata
 ## Add statements
 
 Wikidata statements capture data about the item. For an item representing a person, you may have statements for data such as their place and date of birth, education level, or employer. [Statements](https://www.wikidata.org/wiki/Help:Statements) start with a [property](https://www.wikidata.org/wiki/Help:Properties) which is then linked to a value, which can be circumscribed by a [qualifier](https://www.wikidata.org/wiki/Help:Qualifiers) and should almost always be supported by a [reference](https://www.wikidata.org/wiki/Help:Sources) (Figure 6). Depending on the property, most values will also be a Wikidata item, but some will be unlinked text strings. For example, the property of "[country of citizenship (P27)](https://www.wikidata.org/wiki/Property:P27)" could be linked to the value of "[United States of America (Q30)](https://www.wikidata.org/wiki/Q30)" (where this value is another Wikidata item), and the property of "[pseudonym (P742)](https://www.wikidata.org/wiki/Property:P742)" could be linked to the value of "Jane Doe" (where this value is a text string). Wikidata will prompt you to conform your value to the data type and format that each property expects.
-
-![](RackMultipart20220809-1-5enz3r_html_d86831201d732175.png) ![](RackMultipart20220809-1-5enz3r_html_455f72bdd714b858.png)
 
 Figure 6. Screenshots from Wikidata ([https://www.wikidata.org/wiki/Q15999449](https://www.wikidata.org/wiki/Q15999449), retrieved 2022-05-11) indicating how properties, values, qualifiers, and references are related in the interface for viewing (left) and editing (right) statements.
 
@@ -225,8 +116,6 @@ The first statement you need to make is one that will tell Wikidata your item re
 2. In the left (_Property_) text box, enter the property "[instance of (P31)](https://www.wikidata.org/wiki/Property:P31)."
 3. In the right text box, enter the value "[human (Q5)](https://www.wikidata.org/wiki/Q5)."
 4. Click the _publish_ button in the top right of the statement box (Figure 7). This will save your statement to the Wikidata item.
-
-![](RackMultipart20220809-1-5enz3r_html_60f4d1146384acd0.png)
 
 Figure 7. Screenshot from Wikidata ([https://www.wikidata.org](https://www.wikidata.org/), retrieved 2022-05-11) illustrating where the _+ add statement_ button and _publish_ buttons are located.
 
@@ -241,8 +130,6 @@ Now that Wikidata knows your item represents a human, it will suggest other prop
 5. Add a reference by clicking the _+ add reference_ button. See the next section, [References](#_76qxzuercrnh), for more detailed information.
 6. Click the _publish_ button in the top right of the statement box. This will save your statement to the Wikidata item. If you included qualifiers in your statement and Wikidata shows a warning exclamation point in a circle, this means that the qualifier you used is not valid for this property. Go back and edit the statement to replace the invalid qualifier with a valid one.
 7. If appropriate, add another value to be linked with the same property. For example, a person may have been employed by multiple institutions throughout their career and you will want to record that information. Each institution can be linked to the employer property statement for a more complete record of the person's employment history. To add additional values to a property, click the _+ add value_ button (Figure 8), include a reference and qualifier(s) if appropriate, and save by clicking the _publish_ button.
-
-![](RackMultipart20220809-1-5enz3r_html_5c572ed66effd98c.png)
 
 Figure 8. Screenshot from Wikidata ([https://www.wikidata.org](https://www.wikidata.org/), retrieved 2022-05-11) illustrating where the _+ add value_ button is located.
 
@@ -267,17 +154,11 @@ Statements made in Wikidata should be verifiable facts supported by references. 
 
 1. Add a reference to a statement that you are editing by clicking the _+ add reference_ button in the statement editing box (Figure 9).
 
-![](RackMultipart20220809-1-5enz3r_html_871ce382c6431b78.png)
-
 Figure 9. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Q15999449](https://www.wikidata.org/wiki/Q15999449), retrieved 2022-05-11) illustrating where the _+ add reference_ and _+ add_ buttons are located.
 
 1. Enter the reference property in the first box. Typically the property used for references is either "[stated in (P248)](https://www.wikidata.org/wiki/Property:P248)" (for publications or media, Figure 10) or "[reference URL (P854)](https://www.wikidata.org/wiki/Property:P854)" (for websites or online sources, Figure 11). "[DOI (P356)](https://www.wikidata.org/wiki/Property:P356)" can also be used.
 
-![](RackMultipart20220809-1-5enz3r_html_4c989cd53b87a6a9.png)
-
 Figure 10. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Q2623977](https://www.wikidata.org/wiki/Q2623977), retrieved 2022-05-05) showing Charles Schuchert's position held as the president of GSA with a "stated in" reference.
-
-![](RackMultipart20220809-1-5enz3r_html_18ce88437bb2a584.png)
 
 Figure 11. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Q2623977](https://www.wikidata.org/wiki/Q2623977), retrieved 2022-05-05) showing that Charles Schuchert's archives are held at Yale, as supported by a "reference URL" reference.
 
@@ -291,21 +172,15 @@ Wikidata has several tools that make adding the same reference to multiple state
 
 1. Near your username on the upper right side of any Wikidata page, select _Preferences_ (Figure 12).
 
-![](RackMultipart20220809-1-5enz3r_html_40d1dc7efd7d1937.jpg)
-
 Figure 12. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Special:Preferences](https://www.wikidata.org/wiki/Special:Preferences), retrieved 2022-05-05) showing the navigation links for _Preferences_ and _Gadgets_.
 
 1. From the tabs on your _Preferences_ page, select _Gadgets_ (Figure 12).
 2. Scroll down through the list of gadgets and check the box next to _DuplicateReferences_ (see Figure 13).
 
-![](RackMultipart20220809-1-5enz3r_html_4e2de69bda3428ab.png)
-
 Figure 13. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Special:Preferences](https://www.wikidata.org/wiki/Special:Preferences), retrieved 2022-05-05) showing the selection that needs to be made to allow you to copy references.
 
 1. Check that this gadget has been successfully added to your account by returning to a Wikidata item that you would like to add references to.
 2. To use the _DuplicateReferences_ gadget, expand the _References_ dropdown on any statement and look for a _copy_ button on the right hand side (Figure 14). Click _copy_ and navigate to another statement for which you want to add the same reference. Expand the _References_ dropdown on this statement editing box, and click on _insert reference_ on the bottom right. You should see the reference statement appear, and it is published automatically.
-
-![](RackMultipart20220809-1-5enz3r_html_1295813ecddf3982.png)
 
 Figure 14. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Q2623977](https://www.wikidata.org/wiki/Q2623977), retrieved 2022-05-05) showing the _copy_ reference link that is now visible.
 
@@ -325,8 +200,6 @@ In some cases you might need to cite an analog reference (e.g., a field trip gui
 
 Where uploading the analog reference to Internet Archive is not feasible, you will need to create or find an item in Wikidata to represent the analog reference (Figure 15). Many analog references already exist as Wikidata items, so just as when creating a new item for an individual in Wikidata, first search for an analog reference before adding it as a new item.
 
-![](RackMultipart20220809-1-5enz3r_html_84a0c27059b5d95b.jpg)
-
 Figure 15. Screenshots from Wikidata ([https://www.wikidata.org/wiki/Q111968550](https://www.wikidata.org/wiki/Q111968550) and [https://www.wikidata.org/wiki/Q111968914](https://www.wikidata.org/wiki/Q111968914), retrieved 2022-05-11) illustrating an option for referencing an analog source (a printed newsletter named "Bryozoa") by creating a new Wikidata item for it.
 
 ## Add external identifiers
@@ -340,8 +213,6 @@ External identifiers link information compiled by a recognized authority about a
 5. Click the _publish_ button in the top right of the statement box. This will save your statement to the Wikidata item.
 
 Wikidata separates identifier statements into a section called _Identifiers_. You won't see this section on your item until you add an external identifier statement, at which point Wikidata will automatically create it (Figure 16).
-
-![](RackMultipart20220809-1-5enz3r_html_2487417c84d0059.png)
 
 Figure 16. Screenshot from Wikidata ([https://www.wikidata.org/wiki/Q2623977](https://www.wikidata.org/wiki/Q2623977), retrieved 2022-05-11) showing the top of the _Identifiers_ section on Charles Schuchert's item.
 
@@ -388,8 +259,6 @@ As discussed above, the search box interface in Wikidata can limit your results,
 
 Wikidata's Query Builder service is designed to be easy to use for those with minimal programming experience. You can even build a query without knowing all of the property and item numbers (Figure 17).
 
-![](RackMultipart20220809-1-5enz3r_html_eace5470e654aec3.png)
-
 Figure 17. Screenshot from Wikidata Query Builder ([https://query.wikidata.org/querybuilder/](https://query.wikidata.org/querybuilder/), retrieved 2022-05-11) illustrating the user-friendly interface and highlighting key elements.
 
 Follow the steps below for an example of how you might use the Wikidata Query Builder:
@@ -401,8 +270,6 @@ Follow the steps below for an example of how you might use the Wikidata Query Bu
 5. Click the _Run query_ button to execute the query (Figure 17). The results will appear in a table under the _Results_ header.
 6. To further manipulate this data, hover over the table and download the results in a variety of formats including JSON, TSV, CSV, HTML, SVG (Figure 18).
 
-![](RackMultipart20220809-1-5enz3r_html_4968a5479e0bba62.png)
-
 Figure 18. Screenshot from Wikidata Query Builder ([https://w.wiki/59cd](https://w.wiki/59cd), retrieved 2022-05-11) showing the results of the example query above and highlighting how to download these data.
 
 ### SPARQL
@@ -412,20 +279,14 @@ Creating a new query using SPARQL requires some programming knowledge. To get st
 1. Go to the SPARQL interface at [https://query.wikidata.org/](https://query.wikidata.org/).
 2. Click on _Examples_ and scroll down to "Humans born in New York City." Select this to prefill your SPARQL query (Figure 19).
 
-![](RackMultipart20220809-1-5enz3r_html_be6325e3e65b1391.png)
-
 Figure 19. Screenshot from Wikidata Query Service ([https://query.wikidata.org/](https://query.wikidata.org/), retrieved 2022-05-11) showing the SPARQL query interface with the "Humans born in New York City" example.
 
 1. Change the property from "[place of birth (P19)](https://www.wikidata.org/wiki/Property:P19)" to "[occupation (P106)](https://www.wikidata.org/wiki/Property:P106)." Change the item from "[New York City (Q60)](https://www.wikidata.org/wiki/Q60)" to "[paleontologist (Q1662561)](https://www.wikidata.org/wiki/Q1662561)" (Figure 20).
-
-![](RackMultipart20220809-1-5enz3r_html_f49ebad2614f9d31.png)
 
 Figure 20. Screenshot from Wikidata Query Service ([https://query.wikidata.org/](https://query.wikidata.org/), retrieved 2022-05-11) showing the SPARQL query interface with changes in the property and item fields to have the query search for Wikidata items with an occupation of paleontologist.
 
 1. Click the blue square with the triangle on the left side to execute the query. This will generate a list of Wikidata items that have an "[occupation (P106)](https://www.wikidata.org/wiki/Property:P106)" that matches "[paleontologist (Q1662561)](https://www.wikidata.org/wiki/Q1662561)."
 2. Search within these results for a particular item. For example, search for the text value "Schuchert." (Figure 21).
-
-![](RackMultipart20220809-1-5enz3r_html_dfdc4efb8df8130c.png)
 
 Figure 21. Screenshot from Wikidata Query Service ([https://query.wikidata.org/](https://query.wikidata.org/), retrieved 2022-05-11) illustrating where to search within the results of a query.
 
@@ -438,8 +299,6 @@ See these example queries (note that you need to click the blue square with the 
 ## Using Wikidata outside of Wikidata
 
 As a shared knowledge platform, Wikidata is a powerful tool for linking information coming from disparate sources and enabling community curated data that can improve data quality elsewhere. Wikidata identifiers ([also called "QIDs"](https://www.wikidata.org/wiki/Q43649390)) provide a mechanism for connecting entities. While collections continue to enhance their local records and disambiguate data points like names of collectors or identifiers, inclusion of a Wikidata identifier in local collection information systems both provides an element of certainty in that record and enables future integration with the Linked Open Data ecosphere.
-
-![](RackMultipart20220809-1-5enz3r_html_53155942663a9afe.jpg)
 
 Figure 22. Screenshot of the Parties module in EMu at the Yale Peabody Museum showing the Wikidata identifier stored in the record.
 
