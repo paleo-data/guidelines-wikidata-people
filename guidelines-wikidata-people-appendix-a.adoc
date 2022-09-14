@@ -1,0 +1,186 @@
+= Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective
+
+== Appendix A
+[cols="1,1,1,1,1", options="header"]
+|===
+| Property Label (ID)
+| Wikidata Definition
+| Paleo Use
+| Example Values (ID)
+| Qualifiers (ID)
+
+| instance of https://www.wikidata.org/wiki/Property:P31[(P31)]
+| That class of which this subject is a particular example and member.
+| Always include this statement when creating a new item about a person.
+| human https://www.wikidata.org/wiki/Q5[(Q5)]
+|
+
+| sex or gender https://www.wikidata.org/wiki/Property:P21[(P21)]*
+| Sex or gender identity of the human.
+| We typically assume gender for deceased people based on their titles (e.g., “Mr.” for a male or “Ms.” for a female).
+| male https://www.wikidata.org/wiki/Q6581097[(Q6581097)], female https://www.wikidata.org/wiki/Q6581072[(Q6581072)], non-binary https://www.wikidata.org/wiki/Q48270[(Q48270)], intersex https://www.wikidata.org/wiki/Q1097630[(Q1097630)], transgender female https://www.wikidata.org/wiki/Q1052281[(Q1052281)], transgender male https://www.wikidata.org/wiki/Q2449503[(Q2449503)], agender https://www.wikidata.org/wiki/Q505371[(Q505371)]
+|
+
+| birth name https://www.wikidata.org/wiki/Property:P1477[(P1477)]*
+| Full name of a person at birth, if different from their current, generally used name (e.g., maiden names).
+| This property is helpful when disambiguating people who share similar names or have changed their name over time.
+|
+|
+
+| given name https://www.wikidata.org/wiki/Property:P735[(P735)]*
+| First name or another given name of this person (e.g., first and middle name).
+|
+|
+| series ordinal https://www.wikidata.org/wiki/Property:P1545[(P1545)] with values of 1, 2, 3, etc. - used to indicate which name comes first, second, third, etc. in a person’s name
+
+| family name https://www.wikidata.org/wiki/Property:P734[(P734)]*
+| Part of full name of person (e.g., last name or surname).
+| Add multiple statements using this property for people who have changed their last name (e.g., after marriage).
+|
+| object has role https://www.wikidata.org/wiki/Property:P3831[(P3831)] with the value of the type of name it is - used to indicate the kind of name this value represents (e.g., maiden name, married name, etc.)
+
+| married name https://www.wikidata.org/wiki/Property:P2562[(P2562)]*
+| Name or surname adopted by a person upon marriage.
+|
+|
+|
+
+| generational suffix https://www.wikidata.org/wiki/Property:P8017[(P8017)]*
+| Suffix used in name
+|
+| Jr. https://www.wikidata.org/wiki/Q19838175[(Q19838175)], Sr. https://www.wikidata.org/wiki/Q19838176[(Q19838176)], III https://www.wikidata.org/wiki/Lexeme:L615860[(L615860)],
+IV https://www.wikidata.org/wiki/Lexeme:L642454[(L642454)]
+|
+
+| date of birth https://www.wikidata.org/wiki/Property:P569[(P569)]*
+| Date on which the subject was born (year-month-day, year-month, or year are acceptable).
+|
+|
+|
+
+| place of birth https://www.wikidata.org/wiki/Property:P19[(P19)]*
+| Most specific known birth location of a person (e.g., city, country, hospital, etc.).
+|
+|
+|
+
+| country of citizenship https://www.wikidata.org/wiki/Property:P27[(P27)]*
+| The object is a country that recognizes the subject as its citizen
+|
+| United States of America https://www.wikidata.org/wiki/Q30[(Q30)], Canada https://www.wikidata.org/wiki/Q16[(Q16)], United Kingdom https://www.wikidata.org/wiki/Q145[(Q145)]
+|
+
+| date of death https://www.wikidata.org/wiki/Property:P570[(P570)]
+| Date on which the subject died (year-month-day, year-month, or year are acceptable).
+|
+|
+|
+
+| place of death https://www.wikidata.org/wiki/Property:P20[(P20)]
+| Most specific known death location of a person (e.g., city, country, hospital, etc.)
+|
+|
+|
+
+| place of burial https://www.wikidata.org/wiki/Property:P119[(P119)]
+| Location of grave, resting place, place of ash-scattering, etc. for a person (e.g., town, city, cemetery, etc.).
+|
+|
+|
+
+| employer https://www.wikidata.org/wiki/Property:P108[(P108)]
+| Person or organization for which the subject works or worked.
+| This is often a university or museum for paleontological professionals. Use multiple instances of this statement to record multiple employers.
+| University of Colorado Museum of Natural History https://www.wikidata.org/wiki/Q4306263[(Q4306263)]; Natural History Museum of Los Angeles County https://www.wikidata.org/wiki/Q2502709[(Q2502709)]; Smithsonian National Museum of Natural History https://www.wikidata.org/wiki/Q148554[(Q148554)]
+| start time https://www.wikidata.org/wiki/Property:P580[(P580)] and end time https://www.wikidata.org/wiki/Property:P582[(P582)] with a date as the value (year-month-day, year-month, or year are acceptable) - used to indicate when the person started and stopped working for that employer
+
+| occupation https://www.wikidata.org/wiki/Property:P106[(P106)]
+| Occupation of a person.
+| This field can be used for professional roles, any affiliation or volunteer roles, or amateur roles the person may have had.
+| curator https://www.wikidata.org/wiki/Q674426[(Q674426)], professor https://www.wikidata.org/wiki/Q121594[(Q121594)], collection manager https://www.wikidata.org/wiki/Q3029418[(Q3029418)], director https://www.wikidata.org/wiki/Q1162163[(Q1162163)], head of department https://www.wikidata.org/wiki/Q4182948[(Q4182948)], fossil collector https://www.wikidata.org/wiki/Q18624170[(Q18624170)], paleontologist https://www.wikidata.org/wiki/Q1662561[(Q1662561)], botanist https://www.wikidata.org/wiki/Q2374149[(Q2374149)], entomologist https://www.wikidata.org/wiki/Q3055126[(Q3055126)], university teacher https://www.wikidata.org/wiki/Q1622272[(Q1622272)]
+|
+
+| affiliation https://www.wikidata.org/wiki/Property:P1416[(P1416)]
+| Organization that a person is (or was) affiliated with (not necessarily a member of or employed by).
+| Other museums or institutions that the person was affiliated with, but never worked for (e.g., research associates, adjoint curators, or other volunteer-type status)
+| New Mexico Museum of Natural History and Science https://www.wikidata.org/wiki/Q3329691[(Q3329691)]; Museum of Comparative Zoology https://www.wikidata.org/wiki/Q1420782[(Q1420782)]; Yale Peabody Museum of Natural History https://www.wikidata.org/wiki/Q122945[(Q122945)]
+|
+
+| field of work https://www.wikidata.org/wiki/Property:P101[(P101)]
+| Specialization of a person.
+| The field of study, discipline, subject, or area the person is/was considered to be an expert in.
+| paleontology https://www.wikidata.org/wiki/Q7205[(Q7205)], vertebrate paleontology https://www.wikidata.org/wiki/Q3634677[(Q36334677)], invertebrate paleontology https://www.wikidata.org/wiki/Q6060491[(Q6060491)], paleobotany https://www.wikidata.org/wiki/Q192694[(Q192694)]
+|
+
+| educated at https://www.wikidata.org/wiki/Property:P69[(P69)]
+| Educational institution attended by subject.
+| University or college the person attended (whether a degree was awarded or not).
+| University of Oklahoma https://www.wikidata.org/wiki/Q640652[(Q640652)], University of Wisconsin-Madison https://www.wikidata.org/wiki/Q838330[(Q838330)], University of Iowa https://www.wikidata.org/wiki/Q182973[(Q182973)]
+| academic degree https://www.wikidata.org/wiki/Property:P512[(P512)]; point in time https://www.wikidata.org/wiki/Property:P585[(P585)] with a date as the value (year-month-day, year-month, or year are acceptable) - used to indicate when the degree was awarded or when the person attended the university; start time https://www.wikidata.org/wiki/Property:P580[(P580)] and end time https://www.wikidata.org/wiki/Property:P582[(P582)] with a date as the value (year-month-day, year-month, or year are acceptable) - used to indicate when the person started and stopped going to school here
+
+| academic degree https://www.wikidata.org/wiki/Property:P512[(P512)]
+| Academic degree that the person holds.
+| See also the “award received” property (below) for recording honorary degrees.
+| Doctor of Philosophy https://www.wikidata.org/wiki/Q752297[(Q752297)], master’s degree https://www.wikidata.org/wiki/Q183816[(Q183816)], Master of Science https://www.wikidata.org/wiki/Q950900[(Q950900)], bachelor’s degree https://www.wikidata.org/wiki/Q163727[(Q163727)], Bachelor of Science https://www.wikidata.org/wiki/Q787674[(Q787674)]
+|
+
+| student of https://www.wikidata.org/wiki/Property:P1066[(P1066)]
+| Person who has taught this person.
+| An individual the person studied under.
+|
+|
+
+| has works in the collection https://www.wikidata.org/wiki/Property:P6379[(P6379)]
+| Collection that has works of this person.
+| The museum(s) or institution(s) that has fossils collected by this person.
+| American Museum of Natural History https://www.wikidata.org/wiki/Q217717[(Q217717)], Denver Museum of Nature and Science https://www.wikidata.org/wiki/Q3330052[(Q3330052)], Field Museum of Natural History https://www.wikidata.org/wiki/Q1122595[(Q1122595)]
+|
+
+| floruit https://www.wikidata.org/wiki/Property:P1317[(P1317)]
+| Date when the person was known to be active or alive.
+| Dates that the person was actively collecting fossils.
+|
+|
+
+| archives at https://www.wikidata.org/wiki/Property:P485[(P485)]
+| The institution holding the subject’s archives.
+| The museum(s) or institution(s) that has this person’s field notes, research notes, correspondence, or other works.
+| Carnegie Museum of Natural History https://www.wikidata.org/wiki/Q1043983[(Q1043983)], University of California Museum of Paleontology https://www.wikidata.org/wiki/Q1312268[(Q1312268)], North Carolina Museum of Natural Sciences https://www.wikidata.org/wiki/Q2483656[(Q2483656)]
+|
+
+| member of https://www.wikidata.org/wiki/Property:P463[(P463)]
+| Organization, club, or group to which the subject belongs. Do not use for membership in ethnic or social groups, nor for holding a political position.
+| Professional organizations or societies that the person is (was) a member of.
+| Geological Society of America https://www.wikidata.org/wiki/Q1503216[(Q1503216)], Society of Vertebrate Paleontology https://www.wikidata.org/wiki/Q1638588[(Q1638588)], Society for the Preservation of Natural History Collections https://www.wikidata.org/wiki/Q7552298[(Q7552298)]
+|
+
+| position held https://www.wikidata.org/wiki/Property:P39[(P39)]
+| Subject currently or formerly holds the object position.
+| The position(s) or office(s) held while the person was a member of a professional organization or society.
+| president https://www.wikidata.org/wiki/Q1255921[(Q1255921)], vice president https://www.wikidata.org/wiki/Q42178[(Q42178)], secretary https://www.wikidata.org/wiki/Q319544[(Q319544)], treasurer https://www.wikidata.org/wiki/Q388338[(Q388338)]
+|
+
+| award received https://www.wikidata.org/wiki/Property:P166[(P166)]
+| Award or recognition received by a person.
+| This can be an award given by the person’s employer, university, or professional organization they are a member of.
+| Penrose Medal https://www.wikidata.org/wiki/Q1630682[(Q1630682)], Paleontological Society Medal https://www.wikidata.org/wiki/Q2047718[(Q8047718)], Romer-Simpson Medal https://www.wikidata.org/wiki/Q1659894[(Q1659894)], honorary doctorate from Harvard University https://www.wikidata.org/wiki/Q39384825[(Q39384825)]
+| point in time https://www.wikidata.org/wiki/Property:P585[(P585)] with a date as the value (year-month-day, year-month, or year are acceptable) - used to indicate the year the award was received
+
+| spouse https://www.wikidata.org/wiki/Property:P26[(P26)]*
+| The subject has the object as their spouse (e.g., husbands, wives, partners, etc.).
+|
+|
+|
+
+| different from https://www.wikidata.org/wiki/Property:P1889[(P1889)]
+| Item that is different from another item, with which it may be confused.
+| To be used to differentiate two people on Wikidata that have the similar names, e.g., Paleontologist Alfred Romer https://www.wikidata.org/wiki/Q688766[(Q688766)] vs. Painter Alfred Isidore Romer https://www.wikidata.org/wiki/Q1255520[(Q1255520)].
+|
+|
+
+| languages spoken, written, or signed https://www.wikidata.org/wiki/Property:P1412[(P1412)]
+| Language(s) that a person speaks, writes, or signs, including the native language(s).
+|
+| English https://www.wikidata.org/wiki/Q1860[(Q1680)], French https://www.wikidata.org/wiki/Q150[(Q150)], Spanish https://www.wikidata.org/wiki/Q1321[(Q1321)]
+|
+| ===

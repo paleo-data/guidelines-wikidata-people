@@ -1,0 +1,498 @@
+= Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective
+:imagesdir: images
+
+image::image.png[TBD]
+
+Created by: (authors listed alphabetically) https://orcid.org/0000-0002-6337-6270[Jennifer Bauer], https://orcid.org/0000-0001-5518-5661[Roger Burkhalter], https://orcid.org/0000-0001-6514-963X[Talia Karim], https://orcid.org/0000-0003-3192-0080[Erica Krimmel], Margaret Landis, https://orcid.org/0000-0002-5398-7721[Siobhan Leachman], https://orcid.org/0000-0001-7909-4166[Holly Little], https://orcid.org/0000-0002-3723-0710[Malena Lorente], https://orcid.org/0000-0002-3759-694X[Suzanne K. Mills], Nicole Neu-Yagle, https://orcid.org/0000-0002-5819-9134[Ben Norton], https://orcid.org/0000-0003-2639-7520[Deborah Paul], https://orcid.org/0000-0001-7618-5230[David Shorthouse], https://orcid.org/0000-0001-5201-8235[Jessica Utrup], https://orcid.org/0000-0001-6770-0181[Jacob Van Veldhuizen], and https://orcid.org/0000-0002-2162-6593[Lindsay Walker], with input from participants of the _Using Wikidata to Capture and Share Information about People in Paleontology_ workshop.
+
+NOTE: Should you wish to credit this document, please cite as: Bauer J, Burkhalter R, Karim T, Krimmel E, Landis M, Leachman S, Little H, Lorente M, Mills SK, Neu-Yagle N, Norton B, Paul D, Shorthouse D, Utrup J, Van Veldhuizen J, and Walker L. 2022. _Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective._ https://doi.org/10.5281/zenodo.6977243
+
+License: https://creativecommons.org/publicdomain/zero/1.0/[CC0 1.0 Universal Public Domain Dedication]
+
+== Introduction
+
+=== Purpose of this document
+
+The purpose of this document is to provide a framework for how to mobilize information via Wikidata about people working in and/or associated with scientific collections. Building on previous Wikidata documentation produced by Siobhan Leachman (2020, https://doi.org/10.5281/zenodo.4724139), participants of the _Using Wikidata to Capture and Share Information about People in Paleontology_ workshop (held March 29-31, 2022) created this framework to formalize and share practical knowledge gained from the workshop.
+
+=== Why use Wikidata?
+
+Collections professionals often focus on sharing information about specimens by publishing via online data aggregators such as the https://www.gbif.org[Global Biodiversity Information Facility (GBIF)] or the https://www.idigbio.org/portal[iDigBio Portal]. The focus of the majority of collections information work has been, primarily, on mobilizing the what, where, and when of a specimen and less on the people involved in collection and preparation. However, knowing definitively who was involved with a specimen—by collecting, identifying, preparing, georeferencing, conducting research on, etc.—enhances the ways in which specimen data can be used. For example, information about birth, death, and occupation dates may help constrain specimen collection dates where they are not explicitly known.
+
+Currently, biographical information and the curatorial effort to maintain this information tend to be duplicated across scientific collection databases and institutions. Wikidata offers a centralized, independent platform for working collaboratively to disambiguate people associated with collections and to mobilize biographical information about them. For example, aliases and other biographical information captured in Wikidata by collections staff with deep knowledge about a person can help staff at another collection disambiguate an obscure namestring associated with some of their specimens. Once a person is represented in Wikidata, they are associated with a unique Wikidata identifier (i.e., a https://www.wikidata.org/wiki/Q43649390[Wikidata QID]). Wikidata identifiers underpin the ability to transfer information about people programmatically, thereby facilitating data completeness, accuracy, and redundancy between local collection databases, Wikidata, and various other online databases and collections management systems.
+
+Storing biographical information in Wikidata makes it more discoverable as part of the Linked Open Data ecosphere. For example, queries on Google's search engine return results from Wikidata <<Figure 1>>. As a centralized repository of linked data, Wikidata also provides ways to demonstrate who is doing what work across multiple collections, and with what impact. This has potential to increase inclusion and improve equity, as many people associated with scientific collections have yet to be fully acknowledged for their contributions, especially historical people who were female, non-White, Indigenous, and/or of lower social or educational standing. The process of creating, editing, and linking information in Wikidata is inherently transparent and encourages removing silos and sharing expertise.
+
+[#figure-1]
+.Screenshot from Google (https://www.google.com, retrieved 2022-04-25) illustrating how its search engine presents structured data via the "Knowledge Panel" in the right hand sidebar. These data come from the Google Knowledge Graph, which in turn draws from various sources including Wikidata.
+image::figure-1.png[screenshot from Google]
+
+=== Best practices for mobilizing information about people
+
+Wikidata provides public access to extensive information about many topics. When those topics are people, being sensitive to how data about them is publicly shared is not only good manners, it also helps maintain Wikidata as an accurate data repository that is safe and respectful for all users. The following considerations should be taken into account when entering data.
+
+==== Respect privacy
+
+When creating or editing a Wikidata item for a living person, there are privacy issues to consider (see the https://www.wikidata.org/wiki/Wikidata:Living_people[Wikidata policy on living people]). Remember that the data being provided about a subject is publicly available and can include personal information such as, but not limited to: name, age, sex, gender, marital status, spouse's name, and nationality. The subject of the item may not want to have this level of personal information about them visible to a broad audience and may even want the item taken down. If that living person is you, creating an autobiographical item is not recommended as it may be flagged by Wikidata for removal. Instead, ask a colleague to create a Wikidata item for you!
+
+Out of concerns for safety and possible legal ramifications, Wikidata items for living minors (e.g., individuals 18 years of age or younger in the United States) should not be created.
+
+==== Maintain objectivity
+
+Data entered into Wikidata should be factual rather than based on opinion. To maintain an objective rather than subjective perspective, it is considered best practice not to make a Wikidata item for yourself, as described above.
+
+=== Glossary
+
+A glossary of commonly used Wikidata terms can be found https://www.wikidata.org/wiki/Wikidata:Glossary[here].
+
+== Contributing to Wikidata
+
+The best way to get acquainted with how Wikidata works is to contribute to it yourself. You do not need to be an expert, and the learning curve is gentle. The steps below will guide you through creating and editing a new Wikidata item, using examples most directly relevant to people associated with paleontology collections.
+
+For a visual orientation to contributing, please see this https://vimeo.com/702109576[20-minute long recording] originally presented by Jessica Utrup at the _Using Wikidata to Capture and Share Information about People in Paleontology_ workshop.
+
+=== Create a new account and log in
+
+To create and edit Wikidata items, you need to have a Wikimedia account. This account is connected to all Wikimedia projects, including Wikipedia and Wikidata. If you already have an account, skip to step 4 below.
+
+. To create a new account, start at the https://www.wikidata.org/wiki/Wikidata:Main\_Page[main Wikidata page].
+. Click _Create Account_ at the top right of this page <<Figure 2>>. Fill out the form and click the blue _Create your account_ button. Record your username and password so that you can log in again at a later date.
+
+[#figure-2]
+.Screenshot from Wikidata (https://www.wikidata.org, retrieved 2022-05-05) indicating where to create an account and/or log in.
+image::figure-2.png[screenshot from Wikidata]
+
+[start=3]
+. When creating a new account, it is helpful to other users to include some information about yourself on your personal user page. This lets the community know who you are and what you are interested in working on in Wikidata. For example, see the https://www.wikidata.org/wiki/User:Ambrosia10[user page for Wikidata superuser Siobhan Leachman]. Siobhan's page includes information about herself and the projects she has worked on, including notes that serve as useful memory aids for her and others.
+
+. If you already have an account, use your username and password to log in on the https://www.wikidata.org/wiki/Wikidata:Main\_Page[main Wikidata page].
+
+=== Search for an existing item
+
+Once logged in, you can create new items and edit existing ones. To prevent duplicating an existing item, it is critical to first search for the item in Wikidata. The two primary ways to search for an existing item are described below.
+
+==== Quick search using the search box
+
+One option is to do a quick search for an existing item (e.g., a person) using the Wikidata search box at the upper right of your screen <<Figure 3>>.
+
+[#figure-3]
+.Screenshot from Wikidata (https://www.wikidata.org, retrieved 2022-05-05) indicating where the quick search box is located.
+image::figure-3.png[screenshot from Wikidata]
+
+The search box is a quick way to locate an item already in Wikidata, but the results will be broad. For example, if you type "paleontologist" into the search box, the results will return not only the https://www.wikidata.org/wiki/Q1662561[profession of "paleontologist"], but also people that have "paleontologist" in their description, locations with "paleontologist" in their name, and journal articles or books that have "paleontologist" as part of the title. The search box is also sensitive to spelling variations, e.g., "palaeontologist" will produce different results than "paleontologist." To help refine your search results, use the Wikidata Query Service as described below.
+
+==== Comprehensive search using the Query Service
+
+A second option is to use Wikidata's Query Service, which helps refine search results based on specific criteria. Using this will make it easier for you to find what you are looking for, or else to confirm that what you are looking for does not yet exist in Wikidata. To access, select _Query Service_ from the sidebar on the left side of the main page, or else access it directly from https://query.wikidata.org[this link].
+
+You can search with the Query Service by either: (1) using the more visual Wikidata Query Builder, or (2) writing a query using the SPARQL language. To learn more about these options, see the detailed instructions provided below in the section <<Querying Wikidata>>.
+
+=== Create a new item
+
+Before creating a new item, be sure you have searched carefully to ensure that the item—in this case, a person—is not already in Wikidata (see previous section). If you are uncertain that an existing Wikidata item represents the person you are adding information for, it is appropriate to create a new item and potentially merge the two items later if they are confirmed to represent the same person (see <<Merge items>>).
+
+As a reminder, you must be logged into Wikidata to create a new item.
+
+. Select _Create a new item_ from the sidebar on the left side of any Wikidata page.
+. You will be directed to an editing interface <<Figure 4>> to enter data for the following fields:
+  . The _Language_ field refers to the language you are using to edit this Wikidata item.
+  . The _Label_ field is the name by which the person is most well known, e.g., the name under which the person published. For example, https://www.wikidata.org/wiki/Q2623977[Charles Schuchert] or https://www.wikidata.org/wiki/Q15999449[Julia Anna Gardner].
+  . The _Description_ field provides space for a tagline about who this person is and/or what they do. This description is displayed underneath the _Label_ value and can be a useful way of quickly disambiguating different people in Wikidata search results <<Figure 5>>. The preferred format for a description includes country of citizenship and occupation(s) followed by birth and death years, e.g., "American paleontologist (1858 –1942)." Refer to the country of citizenship following the same language norms that Wikidata uses elsewhere, e.g., https://www.wikidata.org/wiki/Q846570[Americans] for people from the United States of America.
+  . The _Aliases_ (or _Also known as_) field is highly important for disambiguation. All variations of a person's name should be included in this field, using a pipe character ("|") to separate each variation, e.g., "C. Schuchert | C Schuchert | Chas Schuchert." Alternatively, aliases can also be added after creating the new item. Aliases help humans and computers (including Wikidata bots) link items to external identifiers, and they also help others find this item more easily when using the Wikidata search box.
+
+[#figure-4]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Special:NewItem, retrieved 2022-05-05) showing the form to create a new item.
+image::figure-4.png[screenshot from Wikidata]
+
+[start=3]
+. Press the blue _Create_ button at the bottom left of the form to publish the new item to Wikidata. You will be redirected to a new page displaying the information you just entered <<Figure 5>>.
+
+[#figure-5]
+.Screenshot of Charles Schuchert's Wikidata item (https://www.wikidata.org/wiki/Q2623977, retrieved 2022-05-05) showing his description and aliases.
+image::figure-5.png[screenshot from Wikidata]
+
+[start=4]
+. Don't stop here! To avoid having Wikidata's tidying bots remove your newly created item, you need to flesh it out by adding statements about this person. Proceed to the next section for further instructions on adding statements.
+
+=== Add statements
+
+Wikidata statements capture data about the item. For an item representing a person, you may have statements for data such as their place and date of birth, education level, or employer. https://www.wikidata.org/wiki/Help:Statements[Statements] start with a https://www.wikidata.org/wiki/Help:Properties[property] which is then linked to a value, which can be circumscribed by a https://www.wikidata.org/wiki/Help:Qualifiers[qualifier] and should almost always be supported by a https://www.wikidata.org/wiki/Help:Sources[reference] <<Figure 6>>. Depending on the property, most values will also be a Wikidata item, but some will be unlinked text strings. For example, the property of https://www.wikidata.org/wiki/Property:P27[country of citizenship (P27)] could be linked to the value of https://www.wikidata.org/wiki/Q30[United States of America (Q30)] (where this value is another Wikidata item), and the property of https://www.wikidata.org/wiki/Property:P742[pseudonym (P742)] could be linked to the value of "Jane Doe" (where this value is a text string). Wikidata will prompt you to conform your value to the data type and format that each property expects.
+
+[#figure-6]
+.Screenshots from Wikidata (https://www.wikidata.org/wiki/Q15999449, retrieved 2022-05-11) indicating how properties, values, qualifiers, and references are related in the interface for viewing (left) and editing (right) statements.
+image::figure-6.png[screenshot from Wikidata]
+
+There are https://www.wikidata.org/wiki/Wikidata:List\_of\_properties[thousands of properties] that can be included as statements on a Wikidata item. To narrow this down, <<Appendix A>> lists recommended properties to add to the item of a person who is associated with scientific collections. The list of properties in Appendix A is just a starting place and is not exhaustive. The rows in Appendix A marked with an asterisk (\*) are properties that provide personal information and should be used with caution when creating or editing an item for a living person.
+
+The first statement you need to make is one that will tell Wikidata your item represents a person.
+
+. Click the _+ add statement_ button on the item, causing a new statement box to appear <<Figure 7>>.
+. In the left (_Property_) text box, enter the property https://www.wikidata.org/wiki/Property:P31[instance of (P31)].
+. In the right text box, enter the value https://www.wikidata.org/wiki/Q5[human (Q5)].
+. Click the _publish_ button in the top right of the statement box <<Figure 7>>. This will save your statement to the Wikidata item.
+
+[#figure-7]
+.Screenshot from Wikidata (https://www.wikidata.org, retrieved 2022-05-11) illustrating where the _+ add statement_ button and _publish_ buttons are located.
+image::figure-7.png[screenshot from Wikidata]
+
+==== Add qualifiers
+
+Now that Wikidata knows your item represents a human, it will suggest other properties to include that relate to people. You can add additional information in the form of qualifiers to these properties. To do this, you will:
+
+. Click the _+ add statement_ button on the item, causing a new statement box to appear.
+. In the left text box, enter the property you wish to use, e.g., https://www.wikidata.org/wiki/Property:P108[employer (P108)].
+. In the right text box, enter the value to be linked with that property, e.g., https://www.wikidata.org/wiki/Q2502709[Natural History Museum of Los Angeles County (Q2502709)]. You will encounter instances where the value you want to link is not accepted by Wikidata, and an error message of "No match was found" is displayed below the text box. This occurs because the property you are making a statement about requires the value to be a Wikidata item and your value does not already exist in Wikidata as an item. In this case, open a new browser tab and create a Wikidata item for the value that you want to link. Once created, return to the person's item and retype the value in the statement.
+. If appropriate, add one or more qualifiers to the value by clicking the _+ add qualifier_ button. Qualifiers are like statements within a statement, and as such consist of a property-value pair. For example, you could enter qualifiers to record the tenure of a person's employment at an institution, e.g., https://www.wikidata.org/wiki/Property:P580[start time (P580)] = "1940" and https://www.wikidata.org/wiki/Property:P582[end time (P582)] = "1972."
+. Add a reference by clicking the _+ add reference_ button. See the next section, <<References>>, for more detailed information.
+. Click the _publish_ button in the top right of the statement box. This will save your statement to the Wikidata item. If you included qualifiers in your statement and Wikidata shows a warning exclamation point in a circle, this means that the qualifier you used is not valid for this property. Go back and edit the statement to replace the invalid qualifier with a valid one.
+. If appropriate, add another value to be linked with the same property. For example, a person may have been employed by multiple institutions throughout their career and you will want to record that information. Each institution can be linked to the employer property statement for a more complete record of the person's employment history. To add additional values to a property, click the _+ add value_ button <<Figure 8>>, include a reference and qualifier(s) if appropriate, and save by clicking the _publish_ button.
+
+[#figure-8]
+.Screenshot from Wikidata (https://www.wikidata.org, retrieved 2022-05-11) illustrating where the _+ add value_ button is located.
+image::figure-8.png[screenshot from Wikidata]
+
+[start=8]
+. Click the _publish_ button in the top right of the statement box. This will save your statement to the Wikidata item.
+
+Note: Statements can only be linked to one property, but properties can have more than one linked value.
+
+==== Wikidata items to use as exemplars
+
+The following people have robust Wikidata items with many statements and are relevant to the domain of paleontology. You may find it helpful to browse their Wikidata items for ideas on what statements might fit your new item, and for illustrations of how to use different properties.
+
+- https://www.wikidata.org/wiki/Q2623977[Charles Schuchert]
+- https://www.wikidata.org/wiki/Q8025390[Winifred Goldring]
+- https://www.wikidata.org/wiki/Q15999449[Julia Anna Gardener]
+- https://www.wikidata.org/wiki/Q19865330[Wilmatte Porter Cockerell]
+- https://www.wikidata.org/wiki/Q2506718[Theodore Dru Alison Cockerell]
+- https://www.wikidata.org/wiki/Q688766[Alfred Romer]
+
+=== Add references
+
+Statements made in Wikidata should be verifiable facts supported by references. https://www.wikidata.org/wiki/Help:Sources[References], also called sources, provide other Wikidata users with a way to check your information, and they are especially important when a single property has multiple, conflicting values. The only types of statements that regularly do _not_ require a reference are ones that document common knowledge, e.g., https://www.wikidata.org/wiki/Property:P31[instance of (P31)] + https://www.wikidata.org/wiki/Q5[human (Q5)].
+
+. Add a reference to a statement that you are editing by clicking the _+ add reference_ button in the statement editing box <<Figure 9>>.
+
+[#figure-9]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Q15999449, retrieved 2022-05-11) illustrating where the _+ add reference_ and _+ add_ buttons are located.
+image::figure-9.png[screenshot from Wikidata]
+
+[start=2]
+. Enter the reference property in the first box. Typically the property used for references is either https://www.wikidata.org/wiki/Property:P248[stated in (P248)] (for publications or media <<Figure 10>>) or https://www.wikidata.org/wiki/Property:P854[reference URL (P854)] (for websites or online sources <<Figure 11>>). https://www.wikidata.org/wiki/Property:P356[DOI (P356)] can also be used.
+
+[#figure-10]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Q2623977, retrieved 2022-05-05) showing Charles Schuchert's position held as the president of GSA with a "stated in" reference.
+image::figure-10.png[screenshot from Wikidata]
+
+[#figure-11]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Q2623977, retrieved 2022-05-05) showing that Charles Schuchert's archives are held at Yale, as supported by a "reference URL" reference.
+image::figure-11.png[screenshot from Wikidata]
+
+[start=3]
+. After you have entered a reference property, a second box will appear for you to enter the reference value. Note that whereas https://www.wikidata.org/wiki/Property:P854[reference URL (P854)] expects a text string, https://www.wikidata.org/wiki/Property:P248[stated in (P248)] expects your value to be another Wikidata item. In this case, open a new browser tab and create a Wikidata item for the value that you want to link. Once created, return to the person's item and retype the reference value in the statement.
+. If you entered a value for https://www.wikidata.org/wiki/Property:P854[reference URL (P854)], then you should also include a second property for https://www.wikidata.org/wiki/Property:P813[retrieved (P813)], using the date you accessed the reference URL as your value. Add this by clicking the _+ add_ button in the blue reference statement editing box <<Figure 9>>.
+. Click the _publish_ button in the top right of the statement box. This will save your new reference statement to the Wikidata item.
+
+==== Tools for references
+
+Wikidata has several tools that make adding the same reference to multiple statements significantly easier than it would be to do so manually. The most useful tool is called _DuplicateReferences_, and you can add it to your user account by following these instructions:
+
+. Near your username on the upper right side of any Wikidata page, select _Preferences_ <<Figure 12>>.
+
+[#figure-12]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Special:Preferences, retrieved 2022-05-05) showing the navigation links for _Preferences_ and _Gadgets_.
+image::figure-12.jpg[screenshot from Wikidata]
+
+[start=2]
+. From the tabs on your _Preferences_ page, select _Gadgets_ <<Figure 12>>.
+. Scroll down through the list of gadgets and check the box next to _DuplicateReferences_ <<Figure 13>>.
+
+[#figure-13]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Special:Preferences, retrieved 2022-05-05) showing the selection that needs to be made to allow you to copy references.
+image::figure-13.png[screenshot from Wikidata]
+
+[start=4]
+. Check that this gadget has been successfully added to your account by returning to a Wikidata item that you would like to add references to.
+. To use the _DuplicateReferences_ gadget, expand the _References_ dropdown on any statement and look for a _copy_ button on the right hand side <<Figure 14>>. Click _copy_ and navigate to another statement for which you want to add the same reference. Expand the _References_ dropdown on this statement editing box, and click on _insert reference_ on the bottom right. You should see the reference statement appear, and it is published automatically.
+
+[#figure-14]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Q2623977, retrieved 2022-05-05) showing the _copy_ reference link that is now visible.
+image::figure-14.png[screenshot from Wikidata]
+
+==== Selecting high quality references
+
+References vary in quality. A detailed overview of references in Wikidata can be found in _Amaral G., et al. 2021. Assessing the quality of sources in Wikidata across languages: A hybrid approach. Journal of Data and Information Quality 13(4): 1-35._ https://doi.org/10.1145/3484828.
+
+A list of <<Resources>> where you will find biographical information is provided in this document, but generally looking for memorials and obituaries in journals published by professional societies (e.g., _Journal of Paleontology_ published by The Paleontological Society) is a good place to start.
+
+==== Archiving unstable URLs
+
+If you would like to use a website as a reference via the https://www.wikidata.org/wiki/Property:P854[reference URL (P854)] property, but are concerned that it may disappear, consider adding the URL to the https://archive.org/web/[Internet Archive Wayback Machine]. You can then use the URL provided by Internet Archive. For more information about the Wayback Machine, what it does, and how to save URLs to the Wayback Machine, see https://www.youtube.com/watch?v=ts1tu1BiSuY&ab_channel=InternetArchive[this video].
+
+==== Analog references
+
+In some cases you might need to cite an analog reference (e.g., a field trip guide or the newsletter of a local paleontological club). If the document could be digitized, and is out of copyright or openly licensed, you may consider uploading it to the Internet Archive. See an example tutorial of how to upload to Internet Archive in https://moorefreelibrary.org/wp-content/uploads/2020/11/Workshop-2-2-Uploading-Media-to-the-Internet-Archive.pdf[this PDF].
+
+Where uploading the analog reference to Internet Archive is not feasible, you will need to create or find an item in Wikidata to represent the analog reference <<Figure 15>>. Many analog references already exist as Wikidata items, so just as when creating a new item for an individual in Wikidata, first search for an analog reference before adding it as a new item.
+
+[#figure-15]
+.Screenshots from Wikidata (https://www.wikidata.org/wiki/Q111968550 and https://www.wikidata.org/wiki/Q111968914, retrieved 2022-05-11) illustrating an option for referencing an analog source (a printed newsletter named "Bryozoa") by creating a new Wikidata item for it.
+image::figure-15.jpg[screenshots from Wikidata]
+
+=== Add external identifiers
+
+External identifiers link information compiled by a recognized authority about an individual to the individual's Wikidata item. Adding these identifiers is a very important part of creating Wikidata items that are integrated into the Linked Open Data world. External identifiers are a special type of statement, and adding them is essentially the same process as described above in <<Add statements>>. You can add an external identifier by following these steps:
+
+. Click the _+ add statement_ button on the item, causing a new statement box to appear.
+. In the left text box, search for the property that represents the external identifier, e.g., https://www.wikidata.org/wiki/Property:P214[VIAF ID (P214)]. The most important external identifiers to add are: https://www.wikidata.org/wiki/Property:P214[VIAF ID (P214)], https://www.wikidata.org/wiki/Property:P213[ISNI (P213)], https://www.wikidata.org/wiki/Property:P496[ORCID iD (P496)], and https://www.wikidata.org/wiki/Property:P7859[WorldCat Identities ID (P7859)]. See <<Appendix B>> for a more complete list of external identifiers relevant to people, and where to look for them.
+. In the right text box, enter the value for the identifier.
+. You do not need to provide a reference for an external identifier. However, adding a reference statement that includes the https://www.wikidata.org/wiki/Property:P813[retrieved (P813)] property provides a data point should any changes happen to the external identifier in the future.
+. Click the _publish_ button in the top right of the statement box. This will save your statement to the Wikidata item.
+
+Wikidata separates identifier statements into a section called _Identifiers_. You won't see this section on your item until you add an external identifier statement, at which point Wikidata will automatically create it <<Figure 16>>.
+
+[#figure-16]
+.Screenshot from Wikidata (https://www.wikidata.org/wiki/Q2623977, retrieved 2022-05-11) showing the top of the _Identifiers_ section on Charles Schuchert's item.
+image::figure-16.png[screenshot from Wikidata]
+
+=== Merge items
+
+Despite the best efforts of its users, Wikidata does contain duplicate items (e.g., two Wikidata items representing the same person). Duplicate items should be merged so that all information about a person can be found within a single Wikidata item. More information about how to merge duplicate items can be found https://www.wikidata.org/wiki/Help:Merge[here].
+
+=== Edit in bulk
+
+Bulk editing in Wikidata can be ideal for situations where you already have complex and potentially a lot of data, and you are uncertain what, if any, of that data is already represented in Wikidata. There are several primary options for editing Wikidata in bulk: QuickStatements, OpenRefine, and scripting. Each of these is outlined below. Prior to using any of these bulk editing options, you should familiarize yourself with the way Wikidata organizes information by editing directly in the Wikidata user interface. This will help you understand how and when to use the bulk editing tools effectively.
+
+For a visual orientation to bulk editing in Wikidata, including a live demo focused on OpenRefine, please see this https://vimeo.com/702109441[hour-long recording] originally presented by Erica Krimmel at the _Using Wikidata to Capture and Share Information about People in Paleontology_ workshop.
+
+In addition to the bulk editing options described here, Wikidata bots are also actively editing content via automated workflows. You can learn more about Wikidata bots at https://www.wikidata.org/wiki/Wikidata:Bots.
+
+==== QuickStatements
+
+QuickStatements is a commonly used tool to create new statements in Wikidata by uploading a spreadsheet. QuickStatements reviews uploaded edits for duplicate statements and maintains audit tracking for every edit action.
+
+- https://www.wikidata.org/wiki/Help:QuickStatements[Access QuickStatements]
+
+==== OpenRefine Wikidata Plugin
+
+The major benefit of using OpenRefine to make bulk edits in Wikidata is that you can work entirely in one visual interface to discover existing data, edit or create new data, and upload new data to Wikidata. While working with data in OpenRefine, Wikidata can be accessed as a reconciliation service to validate information. OpenRefine version 3.0 or later includes integrated support for this use of Wikidata.
+
+- https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine[See documentation from Wikidata]
+- https://docs.openrefine.org/manual/wikibase/reconciling[See documentation from OpenRefine]
+
+==== Scripting
+
+Wikidata allows access via bots for scripts written in programming languages such as Python. These scripts commonly use QuickStatements as an intermediary tool.
+
+- https://pypi.org/project/pywikibot[See PyWikiBot]
+- https://github.com/SuLab/WikidataIntegrator[See Wikidataintegrator]
+
+== Querying Wikidata
+
+As discussed above, the search box interface in Wikidata can limit your results, and you may therefore wish to use more comprehensive methods for querying. Here, we describe methods for using the Wikidata Query Builder and SPARQL. Additional information and tutorials on how to query Wikidata can be found https://www.wikidata.org/wiki/Wikidata:SPARQL\_query\_service/Wikidata\_Query\_Help[here].
+
+=== Wikidata Query Builder
+
+Wikidata's Query Builder service is designed to be easy to use for those with minimal programming experience. You can even build a query without knowing all of the property and item numbers <<Figure 17>>.
+
+[#figure-17]
+.Screenshot from Wikidata Query Builder (https://query.wikidata.org/querybuilder, retrieved 2022-05-11) illustrating the user-friendly interface and highlighting key elements.
+image::figure-17.png[screenshot from Wikidata Query Builder]
+
+Follow the steps below for an example of how you might use the Wikidata Query Builder:
+
+. Go to the https://query.wikidata.org/querybuilder[Wikidata Query Builder] interface.
+. Start typing "occupation" into the _Property_ field <<Figure 17>>. A list of options will auto-populate, and you can select the correct property by clicking on it.
+. Start typing "paleontologist" in the _Value_ field <<Figure 17>>. A list of options will auto-populate, and you can select the correct value by clicking on it.
+. To see more than 100 items, uncheck the box _Limit the number of results to_ or change the number in the box <<Figure 17>>.
+. Click the _Run query_ button to execute the query <<Figure 17>>. The results will appear in a table under the _Results_ header.
+. To further manipulate this data, hover over the table and download the results in a variety of formats including JSON, TSV, CSV, HTML, SVG <<Figure 18>>.
+
+[#figure-18]
+.Screenshot from Wikidata Query Builder (https://w.wiki/59cd, retrieved 2022-05-11) showing the results of the example query above and highlighting how to download these data.
+image::figure-18.png[screenshot from Wikidata Query Builder]
+
+=== SPARQL
+
+Creating a new query using SPARQL requires some programming knowledge. To get started, begin with an example SPARQL query as described in the following steps:
+
+. Go to the https://query.wikidata.org[Wikidata SPARQL] interface.
+. Click on _Examples_ and scroll down to "Humans born in New York City." Select this to prefill your SPARQL query <<Figure 19>>.
+
+[#figure-19]
+.Screenshot from Wikidata Query Service (https://query.wikidata.org, retrieved 2022-05-11) showing the SPARQL query interface with the "Humans born in New York City" example.
+image::figure-19.png[screenshot from Wikidata Query Service]
+
+[start=3]
+. Change the property from https://www.wikidata.org/wiki/Property:P19[place of birth (P19)] to https://www.wikidata.org/wiki/Property:P106[occupation (P106)]. Change the item from https://www.wikidata.org/wiki/Q60[New York City (Q60)] to https://www.wikidata.org/wiki/Q1662561[paleontologist (Q1662561)] <<Figure 20>>.
+
+[#figure-20]
+.Screenshot from Wikidata Query Service (https://query.wikidata.org, retrieved 2022-05-11) showing the SPARQL query interface with changes in the property and item fields to have the query search for Wikidata items with an occupation of paleontologist.
+image::figure-20.png[screenshot from Wikidata Query Service]
+
+[start=4]
+. Click the blue square with the triangle on the left side to execute the query. This will generate a list of Wikidata items that have an https://www.wikidata.org/wiki/Property:P106[occupation (P106)] that matches https://www.wikidata.org/wiki/Q1662561[paleontologist (Q1662561)].
+. Search within these results for a particular item. For example, search for the text value "Schuchert" <<Figure 21>>.
+
+[#figure-21]
+.Screenshot from Wikidata Query Service (https://query.wikidata.org, retrieved 2022-05-11) illustrating where to search within the results of a query.
+image::figure-21.png[screenshot from Wikidata Query Service]
+
+See these example queries (note that you need to click the blue square with the triangle on the left side to execute each query):
+
+- https://w.wiki/5heS[Here is a simple query to see what species in the genus _Isotelus_ (a trilobite) Wikidata knows about.]
+- https://w.wiki/5heT[Here is the same query as above for species of _Isotelus_ (a trilobite), where if the item has an image it is displayed in the query results.]
+- https://w.wiki/5heU[Here is a more advanced query for female paleontologists and fossil collectors born before 1900, sorted by number of Wiki sitelinks, with some related information including Bionomia identifiers.]
+
+== Using Wikidata outside of Wikidata
+
+As a shared knowledge platform, Wikidata is a powerful tool for linking information coming from disparate sources and enabling community curated data that can improve data quality elsewhere. Wikidata identifiers (https://www.wikidata.org/wiki/Q43649390[also called "QIDs"]) provide a mechanism for connecting entities. While collections continue to enhance their local records and disambiguate data points like names of collectors or identifiers, inclusion of a Wikidata identifier in local collection information systems both provides an element of certainty in that record and enables future integration with the Linked Open Data ecosphere. This, in turn, promotes cross-domain use and reuse and improves data quality both within and among institutions.
+
+[#figure-22]
+.Screenshot of the Parties module in EMu at the Yale Peabody Museum showing the Wikidata identifier stored in the record.
+image::figure-22.jpg[screenshot from EMu]
+
+Wikidata identifiers also can serve as appropriate values to use in the Darwin Core standard terms http://rs.tdwg.org/dwc/terms/recordedByID[recordedByID] and http://rs.tdwg.org/dwc/terms/identifiedByID[identifiedByID]. When implementing the use of Wikidata outside of Wikidata, use the concept URI rather than the item page as the identifier value (e.g., http://www.wikidata.org/entity/Q1039034 vs. https://www.wikidata.org/wiki/Q1039034).
+
+=== Exporting from Wikidata in bulk
+
+Several primary mechanisms are available for external, read-only access to information stored on Wikidata. These are briefly explained below.
+
+==== Export with Wikidata Query Service
+
+The Wikidata Query Service (WDQS) is a SPARQL server instance for access to Wikidata. SPARQL is a language used to query data stored in RDF format. Queries are written in a specific format that adheres to the RDF specification, in contrast to the popular SQL query language.
+
+https://wikitech.wikimedia.org/wiki/Wikidata\_Query\_Service[Access Wikidata Query Service]
+
+https://www.mediawiki.org/wiki/Wikidata\_Query\_Service/User\_Manual[See Wikidata Query Service documentation]
+
+See more resources for learning how to use the Wikidata Query Service:
+
+- https://cambridgesemantics.com/blog/semantic-university/learn-sparql/sparql-vs-sql[A comparison between SQL and SPARQL]
+- https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer[Wikidata Data Model]
+- https://www.wikidata.org/wiki/Wikidata:Data\_access[Wikidata Data Access]
+
+==== Export with MediaWiki Action API
+
+Wikidata is based on the MediaWiki platform. As a result, many of the tools available for accessing MediaWiki are also available for Wikidata, including the official stable API called the MediaWiki Action API.
+
+https://www.wikidata.org/w/api.php[See API documentation]
+
+==== Export with REST API
+
+A third party REST API built on top of Wikidata SPARQL endpoints allows read-only access to Wikidata. This API is not officially supported by the Wikimedia Foundation, although the underlying SPARQL endpoints are provided by the foundation.
+
+https://opencitations.net/wikidata/api/v1[See API documentation]
+
+==== Export with JSON data dump
+
+Wikidata releases a regular snapshot, or "data dump," of the entire site as a single JSON file, which is available as \*.gz or \*.bz2 compressed formats. The uncompressed JSON files are large (\>100 GB) and therefore cannot be opened in a text editor.
+
+https://dumps.wikimedia.org/wikidatawiki/entities[Access JSON data dump files, arranged by timestamp]
+
+https://doc.wikimedia.org/Wikibase/master/php/md\_docs\_topics\_json.html[See documentation about the canonical JSON format used to represent Wikidata entities]
+
+https://www.wikidata.org/wiki/Wikidata:Database\_download[See documentation about Wikidata data dumps]
+
+See these programmatic library resources for working with uncompressed JSON files:
+
+- Go Programming Language, https://gitlab.com/tozd/go/mediawiki
+- PHP, https://github.com/JeroenDeDauw/JsonDumpReader
+
+==== Export with RDF data dump
+
+Wikidata releases a regular snapshot, or "data dump," of the entire site as a single RDF file using the Turtle and N-Triple formats. In addition, Wikidata entries labeled as "truthy" statements are available; truthy statements do not contain metadata such as qualifiers and references.
+
+https://dumps.wikimedia.org/wikidatawiki/entities[Access RDF data dump files]
+
+https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format[See documentation about the RDF format used to represent Wikidata entities]
+
+https://www.wikidata.org/wiki/Wikidata:Database_download[See documentation about Wikidata data dumps]
+
+See these additional resources related to RDF:
+
+- https://www.w3.org/TR/turtle[Turtle format]
+- https://www.w3.org/TR/n-triples and https://en.wikipedia.org/wiki/N-Triples[N-Triple format]
+- https://medium.com/wallscope/understanding-linked-data-formats-rdf-xml-vs-turtle-vs-n-triples-eb931dbe9827[Difference between RDF formats]
+
+=== Wikidata Toolkit
+
+The Wikidata Toolkit is an open source Java library and client that allows developers to build tools with direct access to Wikidata. Currently, the toolkit can be implemented either as a traditional Java library for Java-based applications, or as a standalone command-line interface client.
+
+https://www.mediawiki.org/wiki/Wikidata\_Toolkit[See documentation for the Wikidata Toolkit]
+
+https://github.com/Wikidata/Wikidata-Toolkit[See also the Wikidata Toolkit GitHub repository]
+
+== Resources
+
+=== Resources for discovering biographical information
+
+Most resources below can be searched to find biographical information about people in general. Several resources are particularly useful for finding data about people associated with paleontology collections. These data can be used to create more robust Wikidata items about people.
+
+https://www.ancestry.com[Ancestry]:: Genealogical information. Particularly helpful for birth and death dates. Requires a paid account, but can often be accessed for free via your public library.
+
+https://www.bemon.loven.gu.se[BEMON]:: Biographical Etymology of Marine Organism Names (BEMON). Source for biographies of taxonomists working with marine organisms.
+
+https://www.biodiversitylibrary.org[Biodiversity Heritage Library]:: Access to digitized historical literature related to biodiversity. Source for biographies and research articles published in historical academic journals.
+
+https://bionomia.net/[Bionomia]:: Platform for linking biodiversity specimens to the people who collected and identified them. Pulls data from the Global Biodiversity Information Facility (GBIF) for known people from Wikidata and ORCID. Source for exploring specimen data with people as the entry point.
+
+https://cushmanfoundation.org/PersonifyEbusiness/Awards-Grants/General-Awards[Cushman Foundation for Foraminiferal Research]:: Source for recipients of various research awards related to foraminifera. See links related to each specific award.
+
+https://www.familysearch.org/en/[FamilySearch]:: Genealogical information. Particularly helpful for birth and death dates. Requires a free account. Source for digitized historical records and images.
+
+https://www.findagrave.com/[Find a Grave]:: Genealogical information. Particularly helpful for birth and death dates. Often includes images of headstones.
+
+https://www.freebmd.org.uk/[FreeBMD]:: Source for information from the Civil Registration index of births, marriages and deaths for England and Wales.
+
+https://www.geosociety.org/gsa/pubs/memorials.aspx[GSA Memorials]:: Tributes written by associates, friends, or relatives to deceased members of the Geological Society of America. Relevant only to a limited number of individuals, but an excellent source with detailed information.
+
+https://archive.org/[Internet Archive]:: Non-profit searchable library of millions of free digitized books, movies, software, music, websites, and more.
+
+https://www.jstor.org/[JSTOR]:: Source for digitized journal articles, books, images, and primary sources.
+
+http://www.nasonline.org/publications/biographical-memoirs/[National Academy Memoirs]:: Source for life histories and selected bibliographies of deceased National Academy of Sciences members. Relevant only to a limited number of individuals, but an excellent source with detailed information.
+
+https://orcid.org/[ORCID]:: Platform for assigning persistent digital identifiers to living people. Source for detailed work history information, including institutional affiliations and publications.
+
+https://paperspast.natlib.govt.nz/newspapers[PapersPast]:: Source for full-text newspaper articles published in New Zealand, some of which may represent articles still protected by copyright in the United States.
+
+http://zoobank.org/[Zoobank]:: Official Registry of Zoological Nomenclature. Source for evidence of a person contributing to nomenclature, e.g., via publishing an original description of a new species.
+
+=== Resources for using Wikidata
+
+Many excellent resources exist for learning how to use Wikidata, and for using Wikidata more efficiently. Those included below provide a starting point.
+
+https://author-disambiguator.toolforge.org/[Author Disambiguator]:: This tool is a visual interface for editing Wikidata items representing the authors of works also recorded in Wikidata. In particular, it aims to assist users in converting author names from strings to items. The Author Disambiguator is integrated with Scholia (see below).
+
+https://cradle.toolforge.org/[Cradle]:: This tool allows users to create new Wikidata items from a form, saving the time typically required to remember and enter all of the relevant statement properties. For example, a user may wish to use Cradle as a template for a new Wikidata item representing a https://www.wikidata.org/wiki/Wikidata:Cradle#Thesis[scientific thesis].
+
+https://librarycarpentry.org/lc-wikidata[Library Carpentry Wikidata]:: "This Library Carpentry lesson introduces librarians to Wikidata. At the conclusion of the lesson you will: know what the Wikidata interface looks like; know how Wikidata is linked to other Wiki projects; know the underlying concepts of Wikidata; create and develop Wikidata items yourself; add references to Wikidata; create a search query in Wikidata using the query language SPARQL; understand how to perform a mass import into Wikidata."
+
+https://en.wikipedia.org/wiki/Wikipedia:Meetup/Aotearoa_New_Zealand_Online[Training aids and resources curated by Aotearoa New Zealand Online]:: Scroll down to the "Training aids and resources" section for links to resources that are thoughtfully curated, and actively updated, by this community.
+
+https://www.youtube.com/channel/UCSDRSVKM4ceUSPI-7-BFeoQ/videos[YouTube videos produced by the Wikimedian in Residence at the University of Edinburgh]:: Good visual tutorials for basic Wikidata editing. Recommended videos include https://www.youtube.com/watch?v=3CuUgJK4L78[How to add a new item to Wikidata] and https://www.youtube.com/watch?v=ibUzIHztZiQ[Adding manual edits to Wikidata: how to add statements with verifiable data and how to create items].
+
+=== Resources for exploring Wikidata
+
+Exploring the data in Wikidata is an exciting way to both answer questions and envision new possibilities.
+
+https://mix-n-match.toolforge.org/[Mix'n'match]:: This tool allows users to explore data in and external to Wikidata through a visual, gamified interface.
+
+https://scholia.toolforge.org/[Scholia]:: "Scholia is a service that creates visual scholarly profiles for topics, people, organizations, species, chemicals, etc. using bibliographic and other information in Wikidata."
+
+=== Resources for getting involved in the Wikimedia community
+
+There are numerous active subsets of the community using Wikidata, and participating in one or more of them can be a good way to solidify skills and to make connections with other people.
+
+https://www.wikidata.org/wiki/Wikidata:WikiProject_LD4_Wikidata_Affinity_Group[LD4 Wikidata Affinity Group]:: LD4 collaborates to advance library and archival practices with a focus on linked open data. The LD4 Wikidata Affinity Group hosts "discussion of Wikidata related topics with the goal of understanding how the library can contribute to and leverage Wikidata as a platform for publishing, linking, and enriching library linked data." They have regular online meetings and an active Slack channel.
+
+https://wikiconference.org/[WikiConference North America]:: "WikiConference North America is the annual conference of Wikimedia enthusiasts and volunteers from throughout North America, including Canada, the United States, Mexico, and the Caribbean. Join Wikipedia, -media, -data, and -cite enthusiasts for a long weekend of collaboration and discovery!" See annual meeting information on the website linked above.
+
+https://meta.wikimedia.org/wiki/WikiCon[WikiCon]:: This landing page provides direction to Wikimedia conferences happening globally.
+
+== Conclusion
+
+Work to enhance and create items in Wikidata is ongoing. By contributing, you are engaging in a community process to improve and build open knowledge about our collections and the people associated with them. Edits in Wikidata directly impact the specimen information mobilized by collections through local implementation of Wikidata identifiers. Within Wikidata, the web of information being built by users like you can be seen by exploring how a Wikidata item is linked throughout the platform. For an example, see this https://www.wikidata.org/w/index.php?title=Special%3AWhatLinksHere&target=Q19865330&namespace=[list of other items that link to the item for].
+
+If you would like to participate in the ongoing work of the paleo collections community and the _Using Wikidata to Capture and Share Information about People in Paleontology_ workshop, please visit our https://paleo-data.github.io/[website] and consider adding to our growing https://docs.google.com/spreadsheets/d/1v9sLu-8GuTN8kOEWSHhZkPWRiZ2-a-s4MeqSEmqos1A/edit?usp=sharing[list of People in Paleontology].
