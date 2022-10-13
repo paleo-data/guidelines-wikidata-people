@@ -1,0 +1,67 @@
+= Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective
+
+== Appendix B, External Identifiers for People
+This appendix outlines external identifier properties to add to a person’s Wikidata item, as described in the Add external identifiers section. Rows with an asterisk (*) indicate that this external identifier is important to add.
+
+[cols="1,1,1", options="header"]
+|===
+| External Authority
+| Wikidata Property Label (ID)
+| Definition
+
+| https://isni.org/page/search-database/[International Standard Name Identifier (INSI)]*
+| ISNI https://www.wikidata.org/wiki/Property:P213[(P213)]
+| ISO standard identifier for people and organizations in the ISNI database
+
+| https://orcid.org/[Open Researcher and Contributor ID (ORCID)]*
+| ORCID iD (P496)
+| identifier for a living person, typically one who is associated with the research community
+
+| https://viaf.org/[Virtual International Authority File (VIAF)]*
+| VIAF ID https://www.wikidata.org/wiki/Property:P214[(P214)]
+| identifier for people, organizations and places in the VIAF database
+
+| https://www.worldcat.org/identities/[WorldCat]*
+| WorldCat Identities ID https://www.wikidata.org/wiki/Property:P7859[(P7859)]
+| identifier for entities in Worldcat Library database
+
+| https://academictree.org/evolution/[Academic Tree]
+| Academic Tree ID https://www.wikidata.org/wiki/Property:P2381[(P2381)]
+| identifier for a person in the Academic Genealogy of Evolutionary Biology database
+
+| https://www.biodiversitylibrary.org/browse/authors[Biodiversity Heritage Library (BHL)]
+| BHL creator ID https://www.wikidata.org/wiki/Property:P4081[(P4081)]
+| identifier for an author in Biodiversity Heritage Library database
+
+| https://bionomia.net/[Bionomia]
+| Bionomia ID https://www.wikidata.org/wiki/Property:P6944[(P6944)]
+| identifier for a collector and/or determiner of natural history specimens in the Bionomia database
+
+| https://ident.familysearch.org/[FamilySearch]
+| FamilySearch person ID https://www.wikidata.org/wiki/Property:P2889[(P2889)]
+| identifier for a person in the Family Search database
+
+| https://www.findagrave.com/[Find a Grave]
+| Find a Grave memorial ID https://www.wikidata.org/wiki/Property:P535[(P535)]
+| identifier for an individual's burial place (e.g., a grave) in the Find a Grave database
+
+| https://scholar.google.com/[Google Scholar]
+| Google Scholar author ID https://www.wikidata.org/wiki/Property:P1960[(P1960)]
+| identifier for an author in the Google Scholar academic search index
+
+| https://www.ipni.org/[International Plant Names Index (IPNI)]
+| IPNI author ID https://www.wikidata.org/wiki/Property:P586[(P586)]
+| identifier for a person in the International Plant Names Index database
+
+| https://id.loc.gov/authorities/names.html[Library of Congress]
+| Library of Congress authority ID https://www.wikidata.org/wiki/Property:P244[(P244)]
+| identifiers for people, families, and corporate bodies in the Library of Congress database
+
+| https://www.linkedin.com/[LinkedIn]
+| LinkedIn personal profile ID https://www.wikidata.org/wiki/Property:P6634[(P6634)]
+| identifier for a person on the LinkedIn website
+
+| https://www.researchgate.net/[ResearchGate]
+| ResearchGate profile ID https://www.wikidata.org/wiki/Property:P2038[(P2038)]
+| identifier for a person associated with their ResearchGate profile
+|===
