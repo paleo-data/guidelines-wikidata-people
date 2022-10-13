@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article">
+<div id="header">
+<h1>Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective</h1>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Created by: (authors listed alphabetically) <a href="https://orcid.org/0000-0002-6337-6270">Jennifer Bauer</a>, <a href="https://orcid.org/0000-0001-5518-5661">Roger Burkhalter</a>, <a href="https://orcid.org/0000-0001-6514-963X">Talia Karim</a>, <a href="https://orcid.org/0000-0003-3192-0080">Erica Krimmel</a>, Margaret Landis, <a href="https://orcid.org/0000-0002-5398-7721">Siobhan Leachman</a>, <a href="https://orcid.org/0000-0001-7909-4166">Holly Little</a>, <a href="https://orcid.org/0000-0002-3723-0710">Malena Lorente</a>, <a href="https://orcid.org/0000-0002-3759-694X">Suzanne K. Mills</a>, Nicole Neu-Yagle, <a href="https://orcid.org/0000-0002-5819-9134">Ben Norton</a>, <a href="https://orcid.org/0000-0003-2639-7520">Deborah Paul</a>, <a href="https://orcid.org/0000-0001-7618-5230">David Shorthouse</a>, <a href="https://orcid.org/0000-0001-5201-8235">Jessica Utrup</a>, <a href="https://orcid.org/0000-0001-6770-0181">Jacob Van Veldhuizen</a>, and <a href="https://orcid.org/0000-0002-2162-6593">Lindsay Walker</a>, with input from participants of the <em>Using Wikidata to Capture and Share Information about People in Paleontology</em> workshop.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Should you wish to credit this document, please cite as: Bauer J, Burkhalter R, Karim T, Krimmel E, Landis M, Leachman S, Little H, Lorente M, Mills SK, Neu-Yagle N, Norton B, Paul D, Shorthouse D, Utrup J, Van Veldhuizen J, and Walker L. 2022. <em>Guidelines for Using Wikidata to Mobilize Information about People in Collections: A Paleontology Perspective.</em> <a href="https://doi.org/10.5281/zenodo.6977243" class="bare">https://doi.org/10.5281/zenodo.6977243</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>License: <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal Public Domain Dedication</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_purpose_of_this_document">Purpose of this document</h3>
+<div class="paragraph">
+<p>The purpose of this document is to provide a framework for how to mobilize information via Wikidata about people working in and/or associated with scientific collections. Building on previous Wikidata documentation produced by Siobhan Leachman (2020, <a href="https://doi.org/10.5281/zenodo.4724139" class="bare">https://doi.org/10.5281/zenodo.4724139</a>), participants of the <em>Using Wikidata to Capture and Share Information about People in Paleontology</em> workshop (held March 29-31, 2022) created this framework to formalize and share practical knowledge gained from the workshop.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_use_wikidata">Why use Wikidata?</h3>
+<div class="paragraph">
+<p>Collections professionals often focus on sharing information about specimens by publishing via online data aggregators such as the <a href="https://www.gbif.org">Global Biodiversity Information Facility (GBIF)</a> or the <a href="https://www.idigbio.org/portal">iDigBio Portal</a>. The focus of the majority of collections information work has been, primarily, on mobilizing the what, where, and when of a specimen and less on the people involved in collection and preparation. However, knowing definitively who was involved with a specimen—by collecting, identifying, preparing, georeferencing, conducting research on, etc.—enhances the ways in which specimen data can be used. For example, information about birth, death, and occupation dates may help constrain specimen collection dates where they are not explicitly known.</p>
+</div>
+<div class="paragraph">
+<p>Currently, biographical information and the curatorial effort to maintain this information tend to be duplicated across scientific collection databases and institutions. Wikidata offers a centralized, independent platform for working collaboratively to disambiguate people associated with collections and to mobilize biographical information about them. For example, aliases and other biographical information captured in Wikidata by collections staff with deep knowledge about a person can help staff at another collection disambiguate an obscure namestring associated with some of their specimens. Once a person is represented in Wikidata, they are associated with a unique Wikidata identifier (i.e., a <a href="https://www.wikidata.org/wiki/Q43649390">Wikidata QID</a>). Wikidata identifiers underpin the ability to transfer information about people programmatically, thereby facilitating data completeness, accuracy, and redundancy between local collection databases, Wikidata, and various other online databases and collections management systems.</p>
+</div>
+<div class="paragraph">
+<p>Storing biographical information in Wikidata makes it more discoverable as part of the Linked Open Data ecosphere. For example, queries on Google&#8217;s search engine return results from Wikidata <a href="#Figure 1">[Figure 1]</a>. As a centralized repository of linked data, Wikidata also provides ways to demonstrate who is doing what work across multiple collections, and with what impact. This has potential to increase inclusion and improve equity, as many people associated with scientific collections have yet to be fully acknowledged for their contributions, especially historical people who were female, non-White, Indigenous, and/or of lower social or educational standing. The process of creating, editing, and linking information in Wikidata is inherently transparent and encourages removing silos and sharing expertise.</p>
+</div>
+<div id="figure-1" class="imageblock">
+<div class="content">
+<img src="images/figure-1.png" alt="screenshot from Google">
+</div>
+<div class="title">Figure 1. Screenshot from Google (<a href="https://www.google.com" class="bare">https://www.google.com</a>, retrieved 2022-04-25) illustrating how its search engine presents structured data via the "Knowledge Panel" in the right hand sidebar. These data come from the Google Knowledge Graph, which in turn draws from various sources including Wikidata.</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_best_practices_for_mobilizing_information_about_people">Best practices for mobilizing information about people</h3>
+<div class="paragraph">
+<p>Wikidata provides public access to extensive information about many topics. When those topics are people, being sensitive to how data about them is publicly shared is not only good manners, it also helps maintain Wikidata as an accurate data repository that is safe and respectful for all users. The following considerations should be taken into account when entering data.</p>
+</div>
+<div class="sect3">
+<h4 id="_respect_privacy">Respect privacy</h4>
+<div class="paragraph">
+<p>When creating or editing a Wikidata item for a living person, there are privacy issues to consider (see the <a href="https://www.wikidata.org/wiki/Wikidata:Living_people">Wikidata policy on living people</a>). Remember that the data being provided about a subject is publicly available and can include personal information such as, but not limited to: name, age, sex, gender, marital status, spouse&#8217;s name, and nationality. The subject of the item may not want to have this level of personal information about them visible to a broad audience and may even want the item taken down. If that living person is you, creating an autobiographical item is not recommended as it may be flagged by Wikidata for removal. Instead, ask a colleague to create a Wikidata item for you!</p>
+</div>
+<div class="paragraph">
+<p>Out of concerns for safety and possible legal ramifications, Wikidata items for living minors (e.g., individuals 18 years of age or younger in the United States) should not be created.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_maintain_objectivity">Maintain objectivity</h4>
+<div class="paragraph">
+<p>Data entered into Wikidata should be factual rather than based on opinion. To maintain an objective rather than subjective perspective, it is considered best practice not to make a Wikidata item for yourself, as described above.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_glossary">Glossary</h3>
+<div class="paragraph">
+<p>A glossary of commonly used Wikidata terms can be found <a href="https://www.wikidata.org/wiki/Wikidata:Glossary">here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_contributing_to_wikidata">Contributing to Wikidata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The best way to get acquainted with how Wikidata works is to contribute to it yourself. You do not need to be an expert, and the learning curve is gentle. The steps below will guide you through creating and editing a new Wikidata item, using examples most directly relevant to people associated with paleontology collections.</p>
+</div>
+<div class="paragraph">
+<p>For a visual orientation to contributing, please see this <a href="https://vimeo.com/702109576">20-minute long recording</a> originally presented by Jessica Utrup at the <em>Using Wikidata to Capture and Share Information about People in Paleontology</em> workshop.</p>
+</div>
+<div class="sect2">
+<h3 id="_create_a_new_account_and_log_in">Create a new account and log in</h3>
+<div class="paragraph">
+<p>To create and edit Wikidata items, you need to have a Wikimedia account. This account is connected to all Wikimedia projects, including Wikipedia and Wikidata. If you already have an account, skip to step 4 below.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To create a new account, start at the <a href="https://www.wikidata.org/wiki/Wikidata:Main\_Page">main Wikidata page</a>.</p>
+</li>
+<li>
+<p>Click <em>Create Account</em> at the top right of this page <a href="#Figure 2">[Figure 2]</a>. Fill out the form and click the blue <em>Create your account</em> button. Record your username and password so that you can log in again at a later date.</p>
+</li>
+</ol>
+</div>
+<div id="figure-2" class="imageblock">
+<div class="content">
+<img src="images/figure-2.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 2. Screenshot from Wikidata (<a href="https://www.wikidata.org" class="bare">https://www.wikidata.org</a>, retrieved 2022-05-05) indicating where to create an account and/or log in.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>When creating a new account, it is helpful to other users to include some information about yourself on your personal user page. This lets the community know who you are and what you are interested in working on in Wikidata. For example, see the <a href="https://www.wikidata.org/wiki/User:Ambrosia10">user page for Wikidata superuser Siobhan Leachman</a>. Siobhan&#8217;s page includes information about herself and the projects she has worked on, including notes that serve as useful memory aids for her and others.</p>
+</li>
+<li>
+<p>If you already have an account, use your username and password to log in on the <a href="https://www.wikidata.org/wiki/Wikidata:Main\_Page">main Wikidata page</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_search_for_an_existing_item">Search for an existing item</h3>
+<div class="paragraph">
+<p>Once logged in, you can create new items and edit existing ones. To prevent duplicating an existing item, it is critical to first search for the item in Wikidata. The two primary ways to search for an existing item are described below.</p>
+</div>
+<div class="sect3">
+<h4 id="_quick_search_using_the_search_box">Quick search using the search box</h4>
+<div class="paragraph">
+<p>One option is to do a quick search for an existing item (e.g., a person) using the Wikidata search box at the upper right of your screen <a href="#Figure 3">[Figure 3]</a>.</p>
+</div>
+<div id="figure-3" class="imageblock">
+<div class="content">
+<img src="images/figure-3.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 3. Screenshot from Wikidata (<a href="https://www.wikidata.org" class="bare">https://www.wikidata.org</a>, retrieved 2022-05-05) indicating where the quick search box is located.</div>
+</div>
+<div class="paragraph">
+<p>The search box is a quick way to locate an item already in Wikidata, but the results will be broad. For example, if you type "paleontologist" into the search box, the results will return not only the <a href="https://www.wikidata.org/wiki/Q1662561">profession of "paleontologist"</a>, but also people that have "paleontologist" in their description, locations with "paleontologist" in their name, and journal articles or books that have "paleontologist" as part of the title. The search box is also sensitive to spelling variations, e.g., "palaeontologist" will produce different results than "paleontologist." To help refine your search results, use the Wikidata Query Service as described below.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_comprehensive_search_using_the_query_service">Comprehensive search using the Query Service</h4>
+<div class="paragraph">
+<p>A second option is to use Wikidata&#8217;s Query Service, which helps refine search results based on specific criteria. Using this will make it easier for you to find what you are looking for, or else to confirm that what you are looking for does not yet exist in Wikidata. To access, select <em>Query Service</em> from the sidebar on the left side of the main page, or else access it directly from <a href="https://query.wikidata.org">this link</a>.</p>
+</div>
+<div class="paragraph">
+<p>You can search with the Query Service by either: (1) using the more visual Wikidata Query Builder, or (2) writing a query using the SPARQL language. To learn more about these options, see the detailed instructions provided below in the section <a href="#_querying_wikidata">Querying Wikidata</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_a_new_item">Create a new item</h3>
+<div class="paragraph">
+<p>Before creating a new item, be sure you have searched carefully to ensure that the item—in this case, a person—is not already in Wikidata (see previous section). If you are uncertain that an existing Wikidata item represents the person you are adding information for, it is appropriate to create a new item and potentially merge the two items later if they are confirmed to represent the same person (see <a href="#_merge_items">Merge items</a>).</p>
+</div>
+<div class="paragraph">
+<p>As a reminder, you must be logged into Wikidata to create a new item.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select <em>Create a new item</em> from the sidebar on the left side of any Wikidata page.</p>
+</li>
+<li>
+<p>You will be directed to an editing interface <a href="#Figure 4">[Figure 4]</a> to enter data for the following fields:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>The <em>Language</em> field refers to the language you are using to edit this Wikidata item.</p>
+</li>
+<li>
+<p>The <em>Label</em> field is the name by which the person is most well known, e.g., the name under which the person published. For example, <a href="https://www.wikidata.org/wiki/Q2623977">Charles Schuchert</a> or <a href="https://www.wikidata.org/wiki/Q15999449">Julia Anna Gardner</a>.</p>
+</li>
+<li>
+<p>The <em>Description</em> field provides space for a tagline about who this person is and/or what they do. This description is displayed underneath the <em>Label</em> value and can be a useful way of quickly disambiguating different people in Wikidata search results <a href="#Figure 5">[Figure 5]</a>. The preferred format for a description includes country of citizenship and occupation(s) followed by birth and death years, e.g., "American paleontologist (1858 –1942)." Refer to the country of citizenship following the same language norms that Wikidata uses elsewhere, e.g., <a href="https://www.wikidata.org/wiki/Q846570">Americans</a> for people from the United States of America.</p>
+</li>
+<li>
+<p>The <em>Aliases</em> (or <em>Also known as</em>) field is highly important for disambiguation. All variations of a person&#8217;s name should be included in this field, using a pipe character ("|") to separate each variation, e.g., "C. Schuchert | C Schuchert | Chas Schuchert." Alternatively, aliases can also be added after creating the new item. Aliases help humans and computers (including Wikidata bots) link items to external identifiers, and they also help others find this item more easily when using the Wikidata search box.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="figure-4" class="imageblock">
+<div class="content">
+<img src="images/figure-4.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 4. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Special:NewItem" class="bare">https://www.wikidata.org/wiki/Special:NewItem</a>, retrieved 2022-05-05) showing the form to create a new item.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>Press the blue <em>Create</em> button at the bottom left of the form to publish the new item to Wikidata. You will be redirected to a new page displaying the information you just entered <a href="#Figure 5">[Figure 5]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-5" class="imageblock">
+<div class="content">
+<img src="images/figure-5.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 5. Screenshot of Charles Schuchert&#8217;s Wikidata item (<a href="https://www.wikidata.org/wiki/Q2623977" class="bare">https://www.wikidata.org/wiki/Q2623977</a>, retrieved 2022-05-05) showing his description and aliases.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Don&#8217;t stop here! To avoid having Wikidata&#8217;s tidying bots remove your newly created item, you need to flesh it out by adding statements about this person. Proceed to the next section for further instructions on adding statements.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_statements">Add statements</h3>
+<div class="paragraph">
+<p>Wikidata statements capture data about the item. For an item representing a person, you may have statements for data such as their place and date of birth, education level, or employer. <a href="https://www.wikidata.org/wiki/Help:Statements">Statements</a> start with a <a href="https://www.wikidata.org/wiki/Help:Properties">property</a> which is then linked to a value, which can be circumscribed by a <a href="https://www.wikidata.org/wiki/Help:Qualifiers">qualifier</a> and should almost always be supported by a <a href="https://www.wikidata.org/wiki/Help:Sources">reference</a> <a href="#Figure 6">[Figure 6]</a>. Depending on the property, most values will also be a Wikidata item, but some will be unlinked text strings. For example, the property of <a href="https://www.wikidata.org/wiki/Property:P27">country of citizenship (P27)</a> could be linked to the value of <a href="https://www.wikidata.org/wiki/Q30">United States of America (Q30)</a> (where this value is another Wikidata item), and the property of <a href="https://www.wikidata.org/wiki/Property:P742">pseudonym (P742)</a> could be linked to the value of "Jane Doe" (where this value is a text string). Wikidata will prompt you to conform your value to the data type and format that each property expects.</p>
+</div>
+<div id="figure-6" class="imageblock">
+<div class="content">
+<img src="images/figure-6.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 6. Screenshots from Wikidata (<a href="https://www.wikidata.org/wiki/Q15999449" class="bare">https://www.wikidata.org/wiki/Q15999449</a>, retrieved 2022-05-11) indicating how properties, values, qualifiers, and references are related in the interface for viewing (left) and editing (right) statements.</div>
+</div>
+<div class="paragraph">
+<p>There are <a href="https://www.wikidata.org/wiki/Wikidata:List\_of\_properties">thousands of properties</a> that can be included as statements on a Wikidata item. To narrow this down, <a href="guidelines-wikidata-people-appendix-a.html">Appendix A</a> lists recommended properties to add to the item of a person who is associated with scientific collections. The list of properties in <a href="guidelines-wikidata-people-appendix-a.html">Appendix A</a> is just a starting place and is not exhaustive. The rows in <a href="guidelines-wikidata-people-appendix-a.html">Appendix A</a> marked with an asterisk (\*) are properties that provide personal information and should be used with caution when creating or editing an item for a living person.</p>
+</div>
+<div class="paragraph">
+<p>The first statement you need to make is one that will tell Wikidata your item represents a person.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <em>+ add statement</em> button on the item, causing a new statement box to appear <a href="#Figure 7">[Figure 7]</a>.</p>
+</li>
+<li>
+<p>In the left (<em>Property</em>) text box, enter the property <a href="https://www.wikidata.org/wiki/Property:P31">instance of (P31)</a>.</p>
+</li>
+<li>
+<p>In the right text box, enter the value <a href="https://www.wikidata.org/wiki/Q5">human (Q5)</a>.</p>
+</li>
+<li>
+<p>Click the <em>publish</em> button in the top right of the statement box <a href="#Figure 7">[Figure 7]</a>. This will save your statement to the Wikidata item.</p>
+</li>
+</ol>
+</div>
+<div id="figure-7" class="imageblock">
+<div class="content">
+<img src="images/figure-7.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 7. Screenshot from Wikidata (<a href="https://www.wikidata.org" class="bare">https://www.wikidata.org</a>, retrieved 2022-05-11) illustrating where the <em>+ add statement</em> button and <em>publish</em> buttons are located.</div>
+</div>
+<div class="sect3">
+<h4 id="_add_qualifiers">Add qualifiers</h4>
+<div class="paragraph">
+<p>Now that Wikidata knows your item represents a human, it will suggest other properties to include that relate to people. You can add additional information in the form of qualifiers to these properties. To do this, you will:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <em>+ add statement</em> button on the item, causing a new statement box to appear.</p>
+</li>
+<li>
+<p>In the left text box, enter the property you wish to use, e.g., <a href="https://www.wikidata.org/wiki/Property:P108">employer (P108)</a>.</p>
+</li>
+<li>
+<p>In the right text box, enter the value to be linked with that property, e.g., <a href="https://www.wikidata.org/wiki/Q2502709">Natural History Museum of Los Angeles County (Q2502709)</a>. You will encounter instances where the value you want to link is not accepted by Wikidata, and an error message of "No match was found" is displayed below the text box. This occurs because the property you are making a statement about requires the value to be a Wikidata item and your value does not already exist in Wikidata as an item. In this case, open a new browser tab and create a Wikidata item for the value that you want to link. Once created, return to the person&#8217;s item and retype the value in the statement.</p>
+</li>
+<li>
+<p>If appropriate, add one or more qualifiers to the value by clicking the <em>+ add qualifier</em> button. Qualifiers are like statements within a statement, and as such consist of a property-value pair. For example, you could enter qualifiers to record the tenure of a person&#8217;s employment at an institution, e.g., <a href="https://www.wikidata.org/wiki/Property:P580">start time (P580)</a> = "1940" and <a href="https://www.wikidata.org/wiki/Property:P582">end time (P582)</a> = "1972."</p>
+</li>
+<li>
+<p>Add a reference by clicking the <em>+ add reference</em> button. See the next section, <a href="#References">[References]</a>, for more detailed information.</p>
+</li>
+<li>
+<p>Click the <em>publish</em> button in the top right of the statement box. This will save your statement to the Wikidata item. If you included qualifiers in your statement and Wikidata shows a warning exclamation point in a circle, this means that the qualifier you used is not valid for this property. Go back and edit the statement to replace the invalid qualifier with a valid one.</p>
+</li>
+<li>
+<p>If appropriate, add another value to be linked with the same property. For example, a person may have been employed by multiple institutions throughout their career and you will want to record that information. Each institution can be linked to the employer property statement for a more complete record of the person&#8217;s employment history. To add additional values to a property, click the <em>+ add value</em> button <a href="#Figure 8">[Figure 8]</a>, include a reference and qualifier(s) if appropriate, and save by clicking the <em>publish</em> button.</p>
+</li>
+</ol>
+</div>
+<div id="figure-8" class="imageblock">
+<div class="content">
+<img src="images/figure-8.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 8. Screenshot from Wikidata (<a href="https://www.wikidata.org" class="bare">https://www.wikidata.org</a>, retrieved 2022-05-11) illustrating where the <em>+ add value</em> button is located.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="8">
+<li>
+<p>Click the <em>publish</em> button in the top right of the statement box. This will save your statement to the Wikidata item.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Note: Statements can only be linked to one property, but properties can have more than one linked value.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_wikidata_items_to_use_as_exemplars">Wikidata items to use as exemplars</h4>
+<div class="paragraph">
+<p>The following people have robust Wikidata items with many statements and are relevant to the domain of paleontology. You may find it helpful to browse their Wikidata items for ideas on what statements might fit your new item, and for illustrations of how to use different properties.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Q2623977">Charles Schuchert</a></p>
+</li>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Q8025390">Winifred Goldring</a></p>
+</li>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Q15999449">Julia Anna Gardener</a></p>
+</li>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Q19865330">Wilmatte Porter Cockerell</a></p>
+</li>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Q2506718">Theodore Dru Alison Cockerell</a></p>
+</li>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Q688766">Alfred Romer</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_references">Add references</h3>
+<div class="paragraph">
+<p>Statements made in Wikidata should be verifiable facts supported by references. <a href="https://www.wikidata.org/wiki/Help:Sources">References</a>, also called sources, provide other Wikidata users with a way to check your information, and they are especially important when a single property has multiple, conflicting values. The only types of statements that regularly do <em>not</em> require a reference are ones that document common knowledge, e.g., <a href="https://www.wikidata.org/wiki/Property:P31">instance of (P31)</a> + <a href="https://www.wikidata.org/wiki/Q5">human (Q5)</a>.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a reference to a statement that you are editing by clicking the <em>+ add reference</em> button in the statement editing box <a href="#Figure 9">[Figure 9]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-9" class="imageblock">
+<div class="content">
+<img src="images/figure-9.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 9. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Q15999449" class="bare">https://www.wikidata.org/wiki/Q15999449</a>, retrieved 2022-05-11) illustrating where the <em>+ add reference</em> and <em>+ add</em> buttons are located.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Enter the reference property in the first box. Typically the property used for references is either <a href="https://www.wikidata.org/wiki/Property:P248">stated in (P248)</a> (for publications or media <a href="#Figure 10">[Figure 10]</a>) or <a href="https://www.wikidata.org/wiki/Property:P854">reference URL (P854)</a> (for websites or online sources <a href="#Figure 11">[Figure 11]</a>). <a href="https://www.wikidata.org/wiki/Property:P356">DOI (P356)</a> can also be used.</p>
+</li>
+</ol>
+</div>
+<div id="figure-10" class="imageblock">
+<div class="content">
+<img src="images/figure-10.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 10. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Q2623977" class="bare">https://www.wikidata.org/wiki/Q2623977</a>, retrieved 2022-05-05) showing Charles Schuchert&#8217;s position held as the president of GSA with a "stated in" reference.</div>
+</div>
+<div id="figure-11" class="imageblock">
+<div class="content">
+<img src="images/figure-11.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 11. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Q2623977" class="bare">https://www.wikidata.org/wiki/Q2623977</a>, retrieved 2022-05-05) showing that Charles Schuchert&#8217;s archives are held at Yale, as supported by a "reference URL" reference.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>After you have entered a reference property, a second box will appear for you to enter the reference value. Note that whereas <a href="https://www.wikidata.org/wiki/Property:P854">reference URL (P854)</a> expects a text string, <a href="https://www.wikidata.org/wiki/Property:P248">stated in (P248)</a> expects your value to be another Wikidata item. In this case, open a new browser tab and create a Wikidata item for the value that you want to link. Once created, return to the person&#8217;s item and retype the reference value in the statement.</p>
+</li>
+<li>
+<p>If you entered a value for <a href="https://www.wikidata.org/wiki/Property:P854">reference URL (P854)</a>, then you should also include a second property for <a href="https://www.wikidata.org/wiki/Property:P813">retrieved (P813)</a>, using the date you accessed the reference URL as your value. Add this by clicking the <em>+ add</em> button in the blue reference statement editing box <a href="#Figure 9">[Figure 9]</a>.</p>
+</li>
+<li>
+<p>Click the <em>publish</em> button in the top right of the statement box. This will save your new reference statement to the Wikidata item.</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="_tools_for_references">Tools for references</h4>
+<div class="paragraph">
+<p>Wikidata has several tools that make adding the same reference to multiple statements significantly easier than it would be to do so manually. The most useful tool is called <em>DuplicateReferences</em>, and you can add it to your user account by following these instructions:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Near your username on the upper right side of any Wikidata page, select <em>Preferences</em> <a href="#Figure 12">[Figure 12]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-12" class="imageblock">
+<div class="content">
+<img src="images/figure-12.jpg" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 12. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Special:Preferences" class="bare">https://www.wikidata.org/wiki/Special:Preferences</a>, retrieved 2022-05-05) showing the navigation links for <em>Preferences</em> and <em>Gadgets</em>.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>From the tabs on your <em>Preferences</em> page, select <em>Gadgets</em> <a href="#Figure 12">[Figure 12]</a>.</p>
+</li>
+<li>
+<p>Scroll down through the list of gadgets and check the box next to <em>DuplicateReferences</em> <a href="#Figure 13">[Figure 13]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-13" class="imageblock">
+<div class="content">
+<img src="images/figure-13.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 13. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Special:Preferences" class="bare">https://www.wikidata.org/wiki/Special:Preferences</a>, retrieved 2022-05-05) showing the selection that needs to be made to allow you to copy references.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Check that this gadget has been successfully added to your account by returning to a Wikidata item that you would like to add references to.</p>
+</li>
+<li>
+<p>To use the <em>DuplicateReferences</em> gadget, expand the <em>References</em> dropdown on any statement and look for a <em>copy</em> button on the right hand side <a href="#Figure 14">[Figure 14]</a>. Click <em>copy</em> and navigate to another statement for which you want to add the same reference. Expand the <em>References</em> dropdown on this statement editing box, and click on <em>insert reference</em> on the bottom right. You should see the reference statement appear, and it is published automatically.</p>
+</li>
+</ol>
+</div>
+<div id="figure-14" class="imageblock">
+<div class="content">
+<img src="images/figure-14.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 14. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Q2623977" class="bare">https://www.wikidata.org/wiki/Q2623977</a>, retrieved 2022-05-05) showing the <em>copy</em> reference link that is now visible.</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_selecting_high_quality_references">Selecting high quality references</h4>
+<div class="paragraph">
+<p>References vary in quality. A detailed overview of references in Wikidata can be found in <em>Amaral G., et al. 2021. Assessing the quality of sources in Wikidata across languages: A hybrid approach. Journal of Data and Information Quality 13(4): 1-35.</em> <a href="https://doi.org/10.1145/3484828" class="bare">https://doi.org/10.1145/3484828</a>.</p>
+</div>
+<div class="paragraph">
+<p>A list of <a href="#_resources">Resources</a> where you will find biographical information is provided in this document, but generally looking for memorials and obituaries in journals published by professional societies (e.g., <em>Journal of Paleontology</em> published by The Paleontological Society) is a good place to start.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_archiving_unstable_urls">Archiving unstable URLs</h4>
+<div class="paragraph">
+<p>If you would like to use a website as a reference via the <a href="https://www.wikidata.org/wiki/Property:P854">reference URL (P854)</a> property, but are concerned that it may disappear, consider adding the URL to the <a href="https://archive.org/web/">Internet Archive Wayback Machine</a>. You can then use the URL provided by Internet Archive. For more information about the Wayback Machine, what it does, and how to save URLs to the Wayback Machine, see <a href="https://www.youtube.com/watch?v=ts1tu1BiSuY&amp;ab_channel=InternetArchive">this video</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_analog_references">Analog references</h4>
+<div class="paragraph">
+<p>In some cases you might need to cite an analog reference (e.g., a field trip guide or the newsletter of a local paleontological club). If the document could be digitized, and is out of copyright or openly licensed, you may consider uploading it to the Internet Archive. See an example tutorial of how to upload to Internet Archive in <a href="https://moorefreelibrary.org/wp-content/uploads/2020/11/Workshop-2-2-Uploading-Media-to-the-Internet-Archive.pdf">this PDF</a>.</p>
+</div>
+<div class="paragraph">
+<p>Where uploading the analog reference to Internet Archive is not feasible, you will need to create or find an item in Wikidata to represent the analog reference <a href="#Figure 15">[Figure 15]</a>. Many analog references already exist as Wikidata items, so just as when creating a new item for an individual in Wikidata, first search for an analog reference before adding it as a new item.</p>
+</div>
+<div id="figure-15" class="imageblock">
+<div class="content">
+<img src="images/figure-15.jpg" alt="screenshots from Wikidata">
+</div>
+<div class="title">Figure 15. Screenshots from Wikidata (<a href="https://www.wikidata.org/wiki/Q111968550" class="bare">https://www.wikidata.org/wiki/Q111968550</a> and <a href="https://www.wikidata.org/wiki/Q111968914" class="bare">https://www.wikidata.org/wiki/Q111968914</a>, retrieved 2022-05-11) illustrating an option for referencing an analog source (a printed newsletter named "Bryozoa") by creating a new Wikidata item for it.</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_external_identifiers">Add external identifiers</h3>
+<div class="paragraph">
+<p>External identifiers link information compiled by a recognized authority about an individual to the individual&#8217;s Wikidata item. Adding these identifiers is a very important part of creating Wikidata items that are integrated into the Linked Open Data world. External identifiers are a special type of statement, and adding them is essentially the same process as described above in <a href="#_add_statements">Add statements</a>. You can add an external identifier by following these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <em>+ add statement</em> button on the item, causing a new statement box to appear.</p>
+</li>
+<li>
+<p>In the left text box, search for the property that represents the external identifier, e.g., <a href="https://www.wikidata.org/wiki/Property:P214">VIAF ID (P214)</a>. The most important external identifiers to add are: <a href="https://www.wikidata.org/wiki/Property:P214">VIAF ID (P214)</a>, <a href="https://www.wikidata.org/wiki/Property:P213">ISNI (P213)</a>, <a href="https://www.wikidata.org/wiki/Property:P496">ORCID iD (P496)</a>, and <a href="https://www.wikidata.org/wiki/Property:P7859">WorldCat Identities ID (P7859)</a>. See <a href="guidelines-wikidata-people-appendix-b.html">Appendix B</a> for a more complete list of external identifiers relevant to people, and where to look for them.</p>
+</li>
+<li>
+<p>In the right text box, enter the value for the identifier.</p>
+</li>
+<li>
+<p>You do not need to provide a reference for an external identifier. However, adding a reference statement that includes the <a href="https://www.wikidata.org/wiki/Property:P813">retrieved (P813)</a> property provides a data point should any changes happen to the external identifier in the future.</p>
+</li>
+<li>
+<p>Click the <em>publish</em> button in the top right of the statement box. This will save your statement to the Wikidata item.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Wikidata separates identifier statements into a section called <em>Identifiers</em>. You won&#8217;t see this section on your item until you add an external identifier statement, at which point Wikidata will automatically create it <a href="#Figure 16">[Figure 16]</a>.</p>
+</div>
+<div id="figure-16" class="imageblock">
+<div class="content">
+<img src="images/figure-16.png" alt="screenshot from Wikidata">
+</div>
+<div class="title">Figure 16. Screenshot from Wikidata (<a href="https://www.wikidata.org/wiki/Q2623977" class="bare">https://www.wikidata.org/wiki/Q2623977</a>, retrieved 2022-05-11) showing the top of the <em>Identifiers</em> section on Charles Schuchert&#8217;s item.</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_merge_items">Merge items</h3>
+<div class="paragraph">
+<p>Despite the best efforts of its users, Wikidata does contain duplicate items (e.g., two Wikidata items representing the same person). Duplicate items should be merged so that all information about a person can be found within a single Wikidata item. More information about how to merge duplicate items can be found <a href="https://www.wikidata.org/wiki/Help:Merge">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_edit_in_bulk">Edit in bulk</h3>
+<div class="paragraph">
+<p>Bulk editing in Wikidata can be ideal for situations where you already have complex and potentially a lot of data, and you are uncertain what, if any, of that data is already represented in Wikidata. There are several primary options for editing Wikidata in bulk: QuickStatements, OpenRefine, and scripting. Each of these is outlined below. Prior to using any of these bulk editing options, you should familiarize yourself with the way Wikidata organizes information by editing directly in the Wikidata user interface. This will help you understand how and when to use the bulk editing tools effectively.</p>
+</div>
+<div class="paragraph">
+<p>For a visual orientation to bulk editing in Wikidata, including a live demo focused on OpenRefine, please see this <a href="https://vimeo.com/702109441">hour-long recording</a> originally presented by Erica Krimmel at the <em>Using Wikidata to Capture and Share Information about People in Paleontology</em> workshop.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the bulk editing options described here, Wikidata bots are also actively editing content via automated workflows. You can learn more about Wikidata bots at <a href="https://www.wikidata.org/wiki/Wikidata:Bots" class="bare">https://www.wikidata.org/wiki/Wikidata:Bots</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_quickstatements">QuickStatements</h4>
+<div class="paragraph">
+<p>QuickStatements is a commonly used tool to create new statements in Wikidata by uploading a spreadsheet. QuickStatements reviews uploaded edits for duplicate statements and maintains audit tracking for every edit action.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Help:QuickStatements">Access QuickStatements</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_openrefine_wikidata_plugin">OpenRefine Wikidata Plugin</h4>
+<div class="paragraph">
+<p>The major benefit of using OpenRefine to make bulk edits in Wikidata is that you can work entirely in one visual interface to discover existing data, edit or create new data, and upload new data to Wikidata. While working with data in OpenRefine, Wikidata can be accessed as a reconciliation service to validate information. OpenRefine version 3.0 or later includes integrated support for this use of Wikidata.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine">See documentation from Wikidata</a></p>
+</li>
+<li>
+<p><a href="https://docs.openrefine.org/manual/wikibase/reconciling">See documentation from OpenRefine</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_scripting">Scripting</h4>
+<div class="paragraph">
+<p>Wikidata allows access via bots for scripts written in programming languages such as Python. These scripts commonly use QuickStatements as an intermediary tool.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://pypi.org/project/pywikibot">See PyWikiBot</a></p>
+</li>
+<li>
+<p><a href="https://github.com/SuLab/WikidataIntegrator">See Wikidataintegrator</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_querying_wikidata">Querying Wikidata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As discussed above, the search box interface in Wikidata can limit your results, and you may therefore wish to use more comprehensive methods for querying. Here, we describe methods for using the Wikidata Query Builder and SPARQL. Additional information and tutorials on how to query Wikidata can be found <a href="https://www.wikidata.org/wiki/Wikidata:SPARQL\_query\_service/Wikidata\_Query\_Help">here</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_wikidata_query_builder">Wikidata Query Builder</h3>
+<div class="paragraph">
+<p>Wikidata&#8217;s Query Builder service is designed to be easy to use for those with minimal programming experience. You can even build a query without knowing all of the property and item numbers <a href="#Figure 17">[Figure 17]</a>.</p>
+</div>
+<div id="figure-17" class="imageblock">
+<div class="content">
+<img src="images/figure-17.png" alt="screenshot from Wikidata Query Builder">
+</div>
+<div class="title">Figure 17. Screenshot from Wikidata Query Builder (<a href="https://query.wikidata.org/querybuilder" class="bare">https://query.wikidata.org/querybuilder</a>, retrieved 2022-05-11) illustrating the user-friendly interface and highlighting key elements.</div>
+</div>
+<div class="paragraph">
+<p>Follow the steps below for an example of how you might use the Wikidata Query Builder:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to the <a href="https://query.wikidata.org/querybuilder">Wikidata Query Builder</a> interface.</p>
+</li>
+<li>
+<p>Start typing "occupation" into the <em>Property</em> field <a href="#Figure 17">[Figure 17]</a>. A list of options will auto-populate, and you can select the correct property by clicking on it.</p>
+</li>
+<li>
+<p>Start typing "paleontologist" in the <em>Value</em> field <a href="#Figure 17">[Figure 17]</a>. A list of options will auto-populate, and you can select the correct value by clicking on it.</p>
+</li>
+<li>
+<p>To see more than 100 items, uncheck the box <em>Limit the number of results to</em> or change the number in the box <a href="#Figure 17">[Figure 17]</a>.</p>
+</li>
+<li>
+<p>Click the <em>Run query</em> button to execute the query <a href="#Figure 17">[Figure 17]</a>. The results will appear in a table under the <em>Results</em> header.</p>
+</li>
+<li>
+<p>To further manipulate this data, hover over the table and download the results in a variety of formats including JSON, TSV, CSV, HTML, SVG <a href="#Figure 18">[Figure 18]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-18" class="imageblock">
+<div class="content">
+<img src="images/figure-18.png" alt="screenshot from Wikidata Query Builder">
+</div>
+<div class="title">Figure 18. Screenshot from Wikidata Query Builder (<a href="https://w.wiki/59cd" class="bare">https://w.wiki/59cd</a>, retrieved 2022-05-11) showing the results of the example query above and highlighting how to download these data.</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sparql">SPARQL</h3>
+<div class="paragraph">
+<p>Creating a new query using SPARQL requires some programming knowledge. To get started, begin with an example SPARQL query as described in the following steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to the <a href="https://query.wikidata.org">Wikidata SPARQL</a> interface.</p>
+</li>
+<li>
+<p>Click on <em>Examples</em> and scroll down to "Humans born in New York City." Select this to prefill your SPARQL query <a href="#Figure 19">[Figure 19]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-19" class="imageblock">
+<div class="content">
+<img src="images/figure-19.png" alt="screenshot from Wikidata Query Service">
+</div>
+<div class="title">Figure 19. Screenshot from Wikidata Query Service (<a href="https://query.wikidata.org" class="bare">https://query.wikidata.org</a>, retrieved 2022-05-11) showing the SPARQL query interface with the "Humans born in New York City" example.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>Change the property from <a href="https://www.wikidata.org/wiki/Property:P19">place of birth (P19)</a> to <a href="https://www.wikidata.org/wiki/Property:P106">occupation (P106)</a>. Change the item from <a href="https://www.wikidata.org/wiki/Q60">New York City (Q60)</a> to <a href="https://www.wikidata.org/wiki/Q1662561">paleontologist (Q1662561)</a> <a href="#Figure 20">[Figure 20]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-20" class="imageblock">
+<div class="content">
+<img src="images/figure-20.png" alt="screenshot from Wikidata Query Service">
+</div>
+<div class="title">Figure 20. Screenshot from Wikidata Query Service (<a href="https://query.wikidata.org" class="bare">https://query.wikidata.org</a>, retrieved 2022-05-11) showing the SPARQL query interface with changes in the property and item fields to have the query search for Wikidata items with an occupation of paleontologist.</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Click the blue square with the triangle on the left side to execute the query. This will generate a list of Wikidata items that have an <a href="https://www.wikidata.org/wiki/Property:P106">occupation (P106)</a> that matches <a href="https://www.wikidata.org/wiki/Q1662561">paleontologist (Q1662561)</a>.</p>
+</li>
+<li>
+<p>Search within these results for a particular item. For example, search for the text value "Schuchert" <a href="#Figure 21">[Figure 21]</a>.</p>
+</li>
+</ol>
+</div>
+<div id="figure-21" class="imageblock">
+<div class="content">
+<img src="images/figure-21.png" alt="screenshot from Wikidata Query Service">
+</div>
+<div class="title">Figure 21. Screenshot from Wikidata Query Service (<a href="https://query.wikidata.org" class="bare">https://query.wikidata.org</a>, retrieved 2022-05-11) illustrating where to search within the results of a query.</div>
+</div>
+<div class="paragraph">
+<p>See these example queries (note that you need to click the blue square with the triangle on the left side to execute each query):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://w.wiki/5heS">Here is a simple query to see what species in the genus <em>Isotelus</em> (a trilobite) Wikidata knows about.</a></p>
+</li>
+<li>
+<p><a href="https://w.wiki/5heT">Here is the same query as above for species of <em>Isotelus</em> (a trilobite), where if the item has an image it is displayed in the query results.</a></p>
+</li>
+<li>
+<p><a href="https://w.wiki/5heU">Here is a more advanced query for female paleontologists and fossil collectors born before 1900, sorted by number of Wiki sitelinks, with some related information including Bionomia identifiers.</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_wikidata_outside_of_wikidata">Using Wikidata outside of Wikidata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As a shared knowledge platform, Wikidata is a powerful tool for linking information coming from disparate sources and enabling community curated data that can improve data quality elsewhere. Wikidata identifiers (<a href="https://www.wikidata.org/wiki/Q43649390">also called "QIDs"</a>) provide a mechanism for connecting entities. While collections continue to enhance their local records and disambiguate data points like names of collectors or identifiers, inclusion of a Wikidata identifier in local collection information systems both provides an element of certainty in that record and enables future integration with the Linked Open Data ecosphere. This, in turn, promotes cross-domain use and reuse and improves data quality both within and among institutions.</p>
+</div>
+<div id="figure-22" class="imageblock">
+<div class="content">
+<img src="images/figure-22.jpg" alt="screenshot from EMu">
+</div>
+<div class="title">Figure 22. Screenshot of the Parties module in EMu at the Yale Peabody Museum showing the Wikidata identifier stored in the record.</div>
+</div>
+<div class="paragraph">
+<p>Wikidata identifiers also can serve as appropriate values to use in the Darwin Core standard terms <a href="http://rs.tdwg.org/dwc/terms/recordedByID">recordedByID</a> and <a href="http://rs.tdwg.org/dwc/terms/identifiedByID">identifiedByID</a>. When implementing the use of Wikidata outside of Wikidata, use the concept URI rather than the item page as the identifier value (e.g., <a href="http://www.wikidata.org/entity/Q1039034" class="bare">http://www.wikidata.org/entity/Q1039034</a> vs. <a href="https://www.wikidata.org/wiki/Q1039034" class="bare">https://www.wikidata.org/wiki/Q1039034</a>).</p>
+</div>
+<div class="sect2">
+<h3 id="_exporting_from_wikidata_in_bulk">Exporting from Wikidata in bulk</h3>
+<div class="paragraph">
+<p>Several primary mechanisms are available for external, read-only access to information stored on Wikidata. These are briefly explained below.</p>
+</div>
+<div class="sect3">
+<h4 id="_export_with_wikidata_query_service">Export with Wikidata Query Service</h4>
+<div class="paragraph">
+<p>The Wikidata Query Service (WDQS) is a SPARQL server instance for access to Wikidata. SPARQL is a language used to query data stored in RDF format. Queries are written in a specific format that adheres to the RDF specification, in contrast to the popular SQL query language.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://wikitech.wikimedia.org/wiki/Wikidata\_Query\_Service">Access Wikidata Query Service</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.mediawiki.org/wiki/Wikidata\_Query\_Service/User\_Manual">See Wikidata Query Service documentation</a></p>
+</div>
+<div class="paragraph">
+<p>See more resources for learning how to use the Wikidata Query Service:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://cambridgesemantics.com/blog/semantic-university/learn-sparql/sparql-vs-sql">A comparison between SQL and SPARQL</a></p>
+</li>
+<li>
+<p><a href="https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer">Wikidata Data Model</a></p>
+</li>
+<li>
+<p><a href="https://www.wikidata.org/wiki/Wikidata:Data\_access">Wikidata Data Access</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_export_with_mediawiki_action_api">Export with MediaWiki Action API</h4>
+<div class="paragraph">
+<p>Wikidata is based on the MediaWiki platform. As a result, many of the tools available for accessing MediaWiki are also available for Wikidata, including the official stable API called the MediaWiki Action API.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.wikidata.org/w/api.php">See API documentation</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_export_with_rest_api">Export with REST API</h4>
+<div class="paragraph">
+<p>A third party REST API built on top of Wikidata SPARQL endpoints allows read-only access to Wikidata. This API is not officially supported by the Wikimedia Foundation, although the underlying SPARQL endpoints are provided by the foundation.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://opencitations.net/wikidata/api/v1">See API documentation</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_export_with_json_data_dump">Export with JSON data dump</h4>
+<div class="paragraph">
+<p>Wikidata releases a regular snapshot, or "data dump," of the entire site as a single JSON file, which is available as *.gz or \*.bz2 compressed formats. The uncompressed JSON files are large (\&gt;100 GB) and therefore cannot be opened in a text editor.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://dumps.wikimedia.org/wikidatawiki/entities">Access JSON data dump files, arranged by timestamp</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://doc.wikimedia.org/Wikibase/master/php/md\_docs\_topics\_json.html">See documentation about the canonical JSON format used to represent Wikidata entities</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.wikidata.org/wiki/Wikidata:Database\_download">See documentation about Wikidata data dumps</a></p>
+</div>
+<div class="paragraph">
+<p>See these programmatic library resources for working with uncompressed JSON files:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go Programming Language, <a href="https://gitlab.com/tozd/go/mediawiki" class="bare">https://gitlab.com/tozd/go/mediawiki</a></p>
+</li>
+<li>
+<p>PHP, <a href="https://github.com/JeroenDeDauw/JsonDumpReader" class="bare">https://github.com/JeroenDeDauw/JsonDumpReader</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_export_with_rdf_data_dump">Export with RDF data dump</h4>
+<div class="paragraph">
+<p>Wikidata releases a regular snapshot, or "data dump," of the entire site as a single RDF file using the Turtle and N-Triple formats. In addition, Wikidata entries labeled as "truthy" statements are available; truthy statements do not contain metadata such as qualifiers and references.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://dumps.wikimedia.org/wikidatawiki/entities">Access RDF data dump files</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format">See documentation about the RDF format used to represent Wikidata entities</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.wikidata.org/wiki/Wikidata:Database_download">See documentation about Wikidata data dumps</a></p>
+</div>
+<div class="paragraph">
+<p>See these additional resources related to RDF:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.w3.org/TR/turtle">Turtle format</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/TR/n-triples" class="bare">https://www.w3.org/TR/n-triples</a> and <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triple format</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/wallscope/understanding-linked-data-formats-rdf-xml-vs-turtle-vs-n-triples-eb931dbe9827">Difference between RDF formats</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wikidata_toolkit">Wikidata Toolkit</h3>
+<div class="paragraph">
+<p>The Wikidata Toolkit is an open source Java library and client that allows developers to build tools with direct access to Wikidata. Currently, the toolkit can be implemented either as a traditional Java library for Java-based applications, or as a standalone command-line interface client.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.mediawiki.org/wiki/Wikidata\_Toolkit">See documentation for the Wikidata Toolkit</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/Wikidata/Wikidata-Toolkit">See also the Wikidata Toolkit GitHub repository</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_resources">Resources</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_resources_for_discovering_biographical_information">Resources for discovering biographical information</h3>
+<div class="paragraph">
+<p>Most resources below can be searched to find biographical information about people in general. Several resources are particularly useful for finding data about people associated with paleontology collections. These data can be used to create more robust Wikidata items about people.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://www.ancestry.com">Ancestry</a></dt>
+<dd>
+<p>Genealogical information. Particularly helpful for birth and death dates. Requires a paid account, but can often be accessed for free via your public library.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.bemon.loven.gu.se">BEMON</a></dt>
+<dd>
+<p>Biographical Etymology of Marine Organism Names (BEMON). Source for biographies of taxonomists working with marine organisms.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a></dt>
+<dd>
+<p>Access to digitized historical literature related to biodiversity. Source for biographies and research articles published in historical academic journals.</p>
+</dd>
+<dt class="hdlist1"><a href="https://bionomia.net/">Bionomia</a></dt>
+<dd>
+<p>Platform for linking biodiversity specimens to the people who collected and identified them. Pulls data from the Global Biodiversity Information Facility (GBIF) for known people from Wikidata and ORCID. Source for exploring specimen data with people as the entry point.</p>
+</dd>
+<dt class="hdlist1"><a href="https://cushmanfoundation.org/PersonifyEbusiness/Awards-Grants/General-Awards">Cushman Foundation for Foraminiferal Research</a></dt>
+<dd>
+<p>Source for recipients of various research awards related to foraminifera. See links related to each specific award.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.familysearch.org/en/">FamilySearch</a></dt>
+<dd>
+<p>Genealogical information. Particularly helpful for birth and death dates. Requires a free account. Source for digitized historical records and images.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.findagrave.com/">Find a Grave</a></dt>
+<dd>
+<p>Genealogical information. Particularly helpful for birth and death dates. Often includes images of headstones.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.freebmd.org.uk/">FreeBMD</a></dt>
+<dd>
+<p>Source for information from the Civil Registration index of births, marriages and deaths for England and Wales.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.geosociety.org/gsa/pubs/memorials.aspx">GSA Memorials</a></dt>
+<dd>
+<p>Tributes written by associates, friends, or relatives to deceased members of the Geological Society of America. Relevant only to a limited number of individuals, but an excellent source with detailed information.</p>
+</dd>
+<dt class="hdlist1"><a href="https://archive.org/">Internet Archive</a></dt>
+<dd>
+<p>Non-profit searchable library of millions of free digitized books, movies, software, music, websites, and more.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.jstor.org/">JSTOR</a></dt>
+<dd>
+<p>Source for digitized journal articles, books, images, and primary sources.</p>
+</dd>
+<dt class="hdlist1"><a href="http://www.nasonline.org/publications/biographical-memoirs/">National Academy Memoirs</a></dt>
+<dd>
+<p>Source for life histories and selected bibliographies of deceased National Academy of Sciences members. Relevant only to a limited number of individuals, but an excellent source with detailed information.</p>
+</dd>
+<dt class="hdlist1"><a href="https://orcid.org/">ORCID</a></dt>
+<dd>
+<p>Platform for assigning persistent digital identifiers to living people. Source for detailed work history information, including institutional affiliations and publications.</p>
+</dd>
+<dt class="hdlist1"><a href="https://paperspast.natlib.govt.nz/newspapers">PapersPast</a></dt>
+<dd>
+<p>Source for full-text newspaper articles published in New Zealand, some of which may represent articles still protected by copyright in the United States.</p>
+</dd>
+<dt class="hdlist1"><a href="http://zoobank.org/">Zoobank</a></dt>
+<dd>
+<p>Official Registry of Zoological Nomenclature. Source for evidence of a person contributing to nomenclature, e.g., via publishing an original description of a new species.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_resources_for_using_wikidata">Resources for using Wikidata</h3>
+<div class="paragraph">
+<p>Many excellent resources exist for learning how to use Wikidata, and for using Wikidata more efficiently. Those included below provide a starting point.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://author-disambiguator.toolforge.org/">Author Disambiguator</a></dt>
+<dd>
+<p>This tool is a visual interface for editing Wikidata items representing the authors of works also recorded in Wikidata. In particular, it aims to assist users in converting author names from strings to items. The Author Disambiguator is integrated with Scholia (see below).</p>
+</dd>
+<dt class="hdlist1"><a href="https://cradle.toolforge.org/">Cradle</a></dt>
+<dd>
+<p>This tool allows users to create new Wikidata items from a form, saving the time typically required to remember and enter all of the relevant statement properties. For example, a user may wish to use Cradle as a template for a new Wikidata item representing a <a href="https://www.wikidata.org/wiki/Wikidata:Cradle#Thesis">scientific thesis</a>.</p>
+</dd>
+<dt class="hdlist1"><a href="https://librarycarpentry.org/lc-wikidata">Library Carpentry Wikidata</a></dt>
+<dd>
+<p>"This Library Carpentry lesson introduces librarians to Wikidata. At the conclusion of the lesson you will: know what the Wikidata interface looks like; know how Wikidata is linked to other Wiki projects; know the underlying concepts of Wikidata; create and develop Wikidata items yourself; add references to Wikidata; create a search query in Wikidata using the query language SPARQL; understand how to perform a mass import into Wikidata."</p>
+</dd>
+<dt class="hdlist1"><a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Aotearoa_New_Zealand_Online">Training aids and resources curated by Aotearoa New Zealand Online</a></dt>
+<dd>
+<p>Scroll down to the "Training aids and resources" section for links to resources that are thoughtfully curated, and actively updated, by this community.</p>
+</dd>
+<dt class="hdlist1"><a href="https://www.youtube.com/channel/UCSDRSVKM4ceUSPI-7-BFeoQ/videos">YouTube videos produced by the Wikimedian in Residence at the University of Edinburgh</a></dt>
+<dd>
+<p>Good visual tutorials for basic Wikidata editing. Recommended videos include <a href="https://www.youtube.com/watch?v=3CuUgJK4L78">How to add a new item to Wikidata</a> and <a href="https://www.youtube.com/watch?v=ibUzIHztZiQ">Adding manual edits to Wikidata: how to add statements with verifiable data and how to create items</a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_resources_for_exploring_wikidata">Resources for exploring Wikidata</h3>
+<div class="paragraph">
+<p>Exploring the data in Wikidata is an exciting way to both answer questions and envision new possibilities.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://mix-n-match.toolforge.org/">Mix&#8217;n&#8217;match</a></dt>
+<dd>
+<p>This tool allows users to explore data in and external to Wikidata through a visual, gamified interface.</p>
+</dd>
+<dt class="hdlist1"><a href="https://scholia.toolforge.org/">Scholia</a></dt>
+<dd>
+<p>"Scholia is a service that creates visual scholarly profiles for topics, people, organizations, species, chemicals, etc. using bibliographic and other information in Wikidata."</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_resources_for_getting_involved_in_the_wikimedia_community">Resources for getting involved in the Wikimedia community</h3>
+<div class="paragraph">
+<p>There are numerous active subsets of the community using Wikidata, and participating in one or more of them can be a good way to solidify skills and to make connections with other people.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_LD4_Wikidata_Affinity_Group">LD4 Wikidata Affinity Group</a></dt>
+<dd>
+<p>LD4 collaborates to advance library and archival practices with a focus on linked open data. The LD4 Wikidata Affinity Group hosts "discussion of Wikidata related topics with the goal of understanding how the library can contribute to and leverage Wikidata as a platform for publishing, linking, and enriching library linked data." They have regular online meetings and an active Slack channel.</p>
+</dd>
+<dt class="hdlist1"><a href="https://wikiconference.org/">WikiConference North America</a></dt>
+<dd>
+<p>"WikiConference North America is the annual conference of Wikimedia enthusiasts and volunteers from throughout North America, including Canada, the United States, Mexico, and the Caribbean. Join Wikipedia, -media, -data, and -cite enthusiasts for a long weekend of collaboration and discovery!" See annual meeting information on the website linked above.</p>
+</dd>
+<dt class="hdlist1"><a href="https://meta.wikimedia.org/wiki/WikiCon">WikiCon</a></dt>
+<dd>
+<p>This landing page provides direction to Wikimedia conferences happening globally.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Work to enhance and create items in Wikidata is ongoing. By contributing, you are engaging in a community process to improve and build open knowledge about our collections and the people associated with them. Edits in Wikidata directly impact the specimen information mobilized by collections through local implementation of Wikidata identifiers. Within Wikidata, the web of information being built by users like you can be seen by exploring how a Wikidata item is linked throughout the platform. For an example, see this <a href="https://www.wikidata.org/w/index.php?title=Special%3AWhatLinksHere&amp;target=Q19865330&amp;namespace=">list of other items that link to the item for</a>.</p>
+</div>
+<div class="paragraph">
+<p>If you would like to participate in the ongoing work of the paleo collections community and the <em>Using Wikidata to Capture and Share Information about People in Paleontology</em> workshop, please visit our <a href="https://paleo-data.github.io/">website</a> and consider adding to our growing <a href="https://docs.google.com/spreadsheets/d/1v9sLu-8GuTN8kOEWSHhZkPWRiZ2-a-s4MeqSEmqos1A/edit?usp=sharing">list of People in Paleontology</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2022-10-13 13:47:58 -0700
+</div>
+</div>
+</body>
+</html>
